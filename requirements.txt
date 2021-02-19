@@ -1,0 +1,3 @@
+requests
+pydig
+kivy[base]
