@@ -2,18 +2,17 @@ import dns_provider
 import dns_ip
 import check_dns
 
-from kivy.app import App
-from kivy.uix.label import Label
+import eel
+eel.init('web')
 
-
-class DnsBench(App):
-    def build(self):
-        label = Label(text='Hello from Kivy',
-                      size_hint=(.5, .5),
-                      pos_hint={'center_x': .5, 'center_y': .5})
-
-        return label
+@eel.expose
+def dnscheck(cache):
+    data = check_dns.resolve_dns(cache)
+    dns = list(data.keys())
+    speed = list(data.values())
     
-if __name__ == '__main__':
-    app = DnsBench()
-    app.run()
+    best = "For your network {} is best DNS Server for use.".format(dns[0])
+    recmd = "Second recommended is {}.".format(dns[1])
+    return [dns,speed,best,recmd]
+
+eel.start('index.html',host="0.0.0.0",block=True)

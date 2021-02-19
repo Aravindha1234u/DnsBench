@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js no-svg">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="shortcut icon" href="https://iqonic.design/wp-themes/umetric-new/wp-content/themes/umetric/assets/images/favicon.ico" />
+        <script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+        <title>DnsBench - Multi-Thread Python Application for Dns Benchmark</title>
+        <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <script type="text/javascript" src="/eel.js"></script>
+        <!-- Google Materalize fonts -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel='dns-prefetch' href='//s.w.org' />
+        <link rel="alternate" type="application/rss+xml" title="umetric &raquo; Feed" href="https://iqonic.design/wp-themes/umetric-new/feed/" />
+        <link rel="alternate" type="application/rss+xml" title="umetric &raquo; Comments Feed" href="https://iqonic.design/wp-themes/umetric-new/comments/feed/" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <style>
+            img.wp-smiley,
+            img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+            }
+        </style>
+        <link rel='stylesheet' id='wp-block-library-css'  href='https://iqonic.design/wp-themes/umetric-new/wp-includes/css/dist/block-library/style.min.css?ver=5.5.3' media='all' />
+        <link rel='stylesheet' id='marvy-custom-pro-css'  href='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/Marvy-Ultimate-Elementor-Animation-Addons/elementor/assets/css/marvy-custom-pro.css?ver=1.0.0' media='all' />
+        <link rel='stylesheet' id='contact-form-7-css'  href='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.2.2' media='all' />
+        <link rel='stylesheet' id='graphina-charts-for-elementor-public-css'  href='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/graphina-elementor-charts-and-graphs/elementor/css/graphina-charts-for-elementor-public.css?ver=1.5.2' media='all' />
+        <link rel='stylesheet' id='intro-linker-css'  href='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/intro-linker/public/css/intro-linker-public.css?ver=1.0.0' media='all' />
+        <link rel='stylesheet' id='flaticon-css'  href='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/iqonic-extensions/assest/css/flaticon.css?ver=1.0.0' media='all' />
+        <link rel='stylesheet' id='tox-progress-css'  href='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/iqonic-extensions/assest/css/tox-progress.css?ver=1.0' media='all' />
+        <link rel='stylesheet' id='timeline-css'  href='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/iqonic-extensions/assest/css/timeline.css?ver=1.0' media='all' />
+        <link rel='stylesheet' id='slick-theme-css'  href='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/iqonic-extensions/assest/css/slick-theme.css?ver=1.0' media='all' />
+        <link rel='stylesheet' id='slick-css'  href='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/iqonic-extensions/assest/css/slick.css?ver=1.0' media='all' />
+        <link rel='stylesheet' id='iqonic-extenstion-css'  href='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/iqonic-extensions/assest/css/iqonic-extenstion.css?ver=1.0.0' media='all' />
+        <link rel='stylesheet' id='marvy-custom-css'  href='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/marvy-animation-addons-for-elementor-lite/elementor/assets/css/marvy-custom.css?ver=1.0.1' media='all' />
+        <link rel='stylesheet' id='rs-plugin-settings-css'  href='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/revslider/public/assets/css/rs6.css?ver=6.2.22' media='all' />
+        <link rel='stylesheet' id='umetric-font-css'  href='//fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&#038;family=Source+Sans+Pro:wght@200;300;400;600;700;900&#038;subset=latin%2Clatin-ext' media='all' />
+        <link rel='stylesheet' id='bootstrap-css'  href='https://iqonic.design/wp-themes/umetric-new/wp-content/themes/umetric/assets/css/bootstrap.min.css?ver=4.1.3' media='all' />
+        <link rel='stylesheet' id='ionicons-css'  href='https://iqonic.design/wp-themes/umetric-new/wp-content/themes/umetric/assets/css/ionicons.min.css?ver=2.0.0' media='all' />
+        <link rel='stylesheet' id='typicon-css'  href='https://iqonic.design/wp-themes/umetric-new/wp-content/themes/umetric/assets/css/typicon.min.css?ver=2.0.0' media='all' />
+        <link rel='stylesheet' id='font-awesome-css'  href='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css?ver=4.7.0' media='all' />
+        <link rel='stylesheet' id='magnific-popup-css'  href='https://iqonic.design/wp-themes/umetric-new/wp-content/themes/umetric/assets/css/magnific-popup.css?ver=3.5.2' media='all' />
+        <link rel='stylesheet' id='owl-carousel-css'  href='https://iqonic.design/wp-themes/umetric-new/wp-content/themes/umetric/assets/css/owl.carousel.min.css?ver=2.3.4' media='all' />
+        <link rel='stylesheet' id='wow-css'  href='https://iqonic.design/wp-themes/umetric-new/wp-content/themes/umetric/assets/css/wow.css?ver=3.7.0' media='all' />
+        <link rel='stylesheet' id='umetric-style-css'  href='https://iqonic.design/wp-themes/umetric-new/wp-content/themes/umetric/assets/css/umetric-style.css?ver=1.0' media='all' />
+        <style id='umetric-style-inline-css'>
+            #loading {
+            background:#ffffff !important;
+            }
+            header.menu-sticky {
+            background:#ffffff !important;
+            position:fixed;
+            }
+            footer .footer-topbar {
+            background : #181a23 !important;
+            }
+            footer {
+            background : #181a23 !important;
+            }
+        </style>
+        <link rel='stylesheet' id='umetric-responsive-css'  href='https://iqonic.design/wp-themes/umetric-new/wp-content/themes/umetric/assets/css/umetric-responsive.css?ver=1.0' media='all' />
+        <link rel='stylesheet' id='elementor-icons-css'  href='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.9.1' media='all' />
+        <link rel='stylesheet' id='elementor-animations-css'  href='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.0.9' media='all' />
+        <link rel='stylesheet' id='elementor-frontend-legacy-css'  href='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/elementor/assets/css/frontend-legacy.min.css?ver=3.0.9' media='all' />
+        <link rel='stylesheet' id='elementor-frontend-css'  href='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.0.9' media='all' />
+        <link rel='stylesheet' id='elementor-post-5-css'  href='https://iqonic.design/wp-themes/umetric-new/wp-content/uploads/elementor/css/post-5.css?ver=1600500939' media='all' />
+        <link rel='stylesheet' id='font-awesome-5-all-css'  href='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.0.9' media='all' />
+        <link rel='stylesheet' id='font-awesome-4-shim-css'  href='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.0.9' media='all' />
+        <link rel='stylesheet' id='elementor-post-4516-css'  href='https://iqonic.design/wp-themes/umetric-new/wp-content/uploads/elementor/css/post-4516.css?ver=1600518199' media='all' />
+        <link rel='stylesheet' id='google-fonts-1-css'  href='https://fonts.googleapis.com/css?family=Montserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CLato%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;ver=5.5.3' media='all' />
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp' id='jquery-core-js'></script>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/graphina-elementor-charts-and-graphs/elementor/js/apexcharts.min.js?ver=1.5.2' id='apexcharts-min-js'></script>
+        <script id='graphina-charts-for-elementor-public-js-extra'>
+            /* <![CDATA[ */
+            var graphina_localize = {"ajaxurl":"https:\/\/iqonic.design\/wp-themes\/umetric-new\/wp-admin\/admin-ajax.php","nonce":"508c3c1e29","graphinaAllGraphs":[],"graphinaAllGraphsOptions":[],"graphinaBlockCharts":[]};
+            /* ]]> */
+        </script>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/graphina-elementor-charts-and-graphs/elementor/js/graphina-charts-for-elementor-public.js?ver=1.5.2' id='graphina-charts-for-elementor-public-js'></script>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/intro-linker/public/js/intro-linker-public.js?ver=1.0.0' id='intro-linker-js'></script>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/marvy-animation-addons-for-elementor-lite/elementor/assets/js/custom/marvy.ripples.js?ver=1.0.1' id='marvy-ripples-js'></script>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.2.22' id='tp-tools-js'></script>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.2.22' id='revmin-js'></script>
+        <!--[if lt IE 9]>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-content/themes/umetric/assets/js/html5.js?ver=3.7.3' id='html5-js'></script>
+        <![endif]-->
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.0.9' id='font-awesome-4-shim-js'></script>
+        <link rel="https://api.w.org/" href="https://iqonic.design/wp-themes/umetric-new/wp-json/" />
+        <link rel="alternate" type="application/json" href="https://iqonic.design/wp-themes/umetric-new/wp-json/wp/v2/pages/4516" />
+        <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://iqonic.design/wp-themes/umetric-new/xmlrpc.php?rsd" />
+        <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://iqonic.design/wp-themes/umetric-new/wp-includes/wlwmanifest.xml" />
+        <meta name="generator" content="WordPress 5.5.3" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+        <link rel="canonical" href="https://iqonic.design/wp-themes/umetric-new/mobile-apps-reporting/" />
+        <link rel='shortlink' href='https://iqonic.design/wp-themes/umetric-new/?p=4516' />
+        <link rel="alternate" type="application/json+oembed" href="https://iqonic.design/wp-themes/umetric-new/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fiqonic.design%2Fwp-themes%2Fumetric-new%2Fmobile-apps-reporting%2F" />
+        <link rel="alternate" type="text/xml+oembed" href="https://iqonic.design/wp-themes/umetric-new/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fiqonic.design%2Fwp-themes%2Fumetric-new%2Fmobile-apps-reporting%2F&#038;format=xml" />
+        <meta name="framework" content="Redux 4.1.20" />
+        <style id='umetric-dynamic-css'>
+            .header1 .navbar-brand img, .vertical-navbar-brand img{
+            width:px!important;
+            }
+            .header1 .navbar-brand img, .vertical-navbar-brand img{
+            height:px!important;
+            }
+        </style>
+        <style id='umetric-dynamic-css25378'>
+            header.style-vertical,footer.iq-over-dark-90{
+            background:#181a23 !important;
+            }
+        </style>
+        <style id='umetric-dynamic-css86624'>
+            .iq-breadcrumb-one{
+            display:none !important;
+            }
+            .content-area .site-main{
+            padding:0 !important;
+            }
+            .iq-breadcrumb-one .title{
+            display:none !important;
+            }
+            .iq-breadcrumb-one .breadcrumb{
+            display:none !important;
+            }
+            .iq-breadcrumb-one{
+            background:url(https://iqonic.design/wp-themes/umetric-new/wp-content/uploads/2020/06/122-4.png) !important;
+            }
+        </style>
+        <style id='umetric-dynamic-css46347'>
+            .footer-top{
+            display:none !important;
+            }
+        </style>
+        <style>.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+        <meta name="generator" content="Powered by Slider Revolution 6.2.22 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+        
+    </head>
+    <body data-spy="scroll" data-offset="80" class="page-template-default page page-id-4516 has-header-image page-two-column colors-light boxed_layout iq-dark-mode vertical-menu-collapsed elementor-default elementor-kit-5 elementor-page elementor-page-4516">
+        <!-- loading -->
+        <div id="loading">
+            <div id="loading-center">
+                <div class="load-img" >
+                    <img src="https://iqonic.design/wp-themes/umetric-new/wp-content/uploads/2020/09/loader.gif" alt="loader">
+                </div>
+            </div>
+        </div>
+        <!-- loading End -->
+        <canvas id="canvas1" class="banner-bg"></canvas>
+        <div id="page" class="site vertical-site-content">
+            <div class="site-content-contain">
+                <div id="content" class="site-content">
+                    <div id="primary" class="content-area">
+                        <main id="main" class="site-main">
+                            <div class="container">
+                                <article id="post-4516" class="post-4516 page type-page status-publish hentry">
+                                <div class="sf-content">
+                                <div data-elementor-type="wp-page" data-elementor-id="4516" class="elementor elementor-4516" data-elementor-settings="[]">
+                                <div class="elementor-inner">
+                                <div class="elementor-section-wrap">
+                                <div data-marvy_enable_birds_animation="false" data-marvy_enable_cells_animation="false" data-marvy_enable_dots_animation="false" data-marvy_enable_fog_animation="false" data-marvy_enable_globe_animation="false" data-marvy_enable_halo_animation="false" data-marvy_enable_net_animation="false" data-marvy_enable_trunk_animation="false" data-marvy_enable_drop_animation="false" data-marvy_enable_fancy_rotate="false" data-marvy_enable_flying_object="false" data-marvy_enable_ripples_animation="true" data-marvy_ripples_animation_circle_color="#33374D" data-marvy_ripples_animation_circle_position="top" data-marvy_enable_waves_animation="false" data-marvy_enable_rings_animation="false" data-marvy_enable_topology_animation="false" class="elementor-section elementor-top-section elementor-element elementor-element-67846a5 elementor-section-full_width elementor-section-stretched elementor-section-height-min-height elementor-section-height-default elementor-section-items-middle" data-id="67846a5" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+                                <div class="elementor-container elementor-column-gap-default">
+                                <div class="elementor-row">
+                                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2fc47997" data-id="2fc47997" data-element_type="column">
+                                <div class="elementor-column-wrap elementor-element-populated">
+                                <div class="elementor-widget-wrap">
+                                <section data-marvy_enable_birds_animation="false" data-marvy_enable_cells_animation="false" data-marvy_enable_dots_animation="false" data-marvy_enable_fog_animation="false" data-marvy_enable_globe_animation="false" data-marvy_enable_halo_animation="false" data-marvy_enable_net_animation="false" data-marvy_enable_trunk_animation="false" data-marvy_enable_drop_animation="false" data-marvy_enable_fancy_rotate="false" data-marvy_enable_flying_object="false" data-marvy_enable_ripples_animation="false" data-marvy_enable_waves_animation="false" data-marvy_enable_rings_animation="false" data-marvy_enable_topology_animation="false" class="elementor-section elementor-inner-section elementor-element elementor-element-6734b50b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6734b50b" data-element_type="section">
+                                <div class="elementor-container elementor-column-gap-default">
+                                <div class="elementor-row">
+                                <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-5782d548" data-id="5782d548" data-element_type="column">
+                                <div class="elementor-column-wrap elementor-element-populated">
+                                    <div class="elementor-widget-wrap">
+                                        <div class="elementor-element elementor-element-778ba3ab elementor-widget elementor-widget-section_title" data-id="778ba3ab" data-element_type="widget" data-widget_type="section_title.default">
+                                            <div class="elementor-widget-container">
+                                                <div class="text-center iq-title-box iq-title-default iq-title-box-1">
+                                                    <div class="iq-title-icon">
+                                                    </div>
+                                                    <h1 class="iq-title" >
+                                                        DnsBench	
+                                                    </h1>
+                                                    <p>Multi-Threaded Python Application for Dns Benchmark</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                </section>
+                                <section data-marvy_enable_birds_animation="false" data-marvy_enable_cells_animation="false" data-marvy_enable_dots_animation="false" data-marvy_enable_fog_animation="false" data-marvy_enable_globe_animation="false" data-marvy_enable_halo_animation="false" data-marvy_enable_net_animation="false" data-marvy_enable_trunk_animation="false" data-marvy_enable_drop_animation="false" data-marvy_enable_fancy_rotate="false" data-marvy_enable_flying_object="false" data-marvy_enable_ripples_animation="false" data-marvy_enable_waves_animation="false" data-marvy_enable_rings_animation="false" data-marvy_enable_topology_animation="false" class="elementor-section elementor-inner-section elementor-element elementor-element-4754f8d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4754f8d" data-element_type="section">
+                                <div class="elementor-container elementor-column-gap-default">
+                                <div class="elementor-row">
+                                <div class="elementor-column elementor-col-30 elementor-inner-column elementor-element elementor-element-73036da" data-id="73036da" data-element_type="column" style="margin: auto;">
+                                <div class="elementor-column-wrap elementor-element-populated">
+                                    <div class="elementor-widget-wrap">
+                                        <div class="elementor-element elementor-element-11dca83 elementor-invisible elementor-widget elementor-widget-iqonic_counter" data-id="11dca83" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:300}" data-widget_type="iqonic_counter.default">
+                                            <div class="elementor-widget-container" id="startcon">
+                                                <div type="button" class="iq-counter iq-counter-style-2 button" onclick="dns();">
+                                                    <div class="counter-content">
+                                                        <p class="iq-counter-info">
+                                                            <br>
+                                                            <h3>Start <i class="fa fa-play" aria-hidden="true" style="font-size: 30px;"></i></h3>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="center custom-control custom-checkbox mb-6">
+                                                    <input type="checkbox" class="custom-control-input" id="cacheenable">
+                                                    <label class="custom-control-label text-white" for="cacheenable" style="font-size: 20px;">Check this to disable cache</label>
+                                                </div>
+                                            </div>
+                                            <script type="text/javascript" src="/eel.js"></script>
+                                            <script type="text/javascript">
+                                                async function dns(){
+                                                    var cache = document.getElementById("cacheenable").checked;
+                                                    var buttonhtml = document.getElementById("startcon").innerHTML;
+                                                    document.getElementById("startcon").innerHTML = '<div class="spinner-border" role="status" style="width: 65px;height: 65px;/* padding-left: 50px; */margin: auto 100px;"></div>'
+                                                    await eel.dnscheck(cache)().then((data) => {
+                                                        chart(data,buttonhtml);
+                                                    });
+                                                }
+                                            </script>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                </section>
+                                
+                                <section id="graph" style="display: none" data-marvy_enable_birds_animation="false" data-marvy_enable_cells_animation="false" data-marvy_enable_dots_animation="false" data-marvy_enable_fog_animation="false" data-marvy_enable_globe_animation="false" data-marvy_enable_halo_animation="false" data-marvy_enable_net_animation="false" data-marvy_enable_trunk_animation="false" data-marvy_enable_drop_animation="false" data-marvy_enable_fancy_rotate="false" data-marvy_enable_flying_object="false" data-marvy_enable_ripples_animation="false" data-marvy_enable_waves_animation="false" data-marvy_enable_rings_animation="false" data-marvy_enable_topology_animation="false" class="elementor-section elementor-top-section elementor-element elementor-element-72c3a417 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="72c3a417" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                    <div class="elementor-container elementor-column-gap-default">
+                                    <div class="elementor-row">
+                                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-90b3a80" data-id="90b3a80" data-element_type="column">
+                                    <div class="elementor-column-wrap elementor-element-populated">
+                                    <div class="elementor-widget-wrap">
+                                    <div class="elementor-element elementor-element-4943118d elementor-widget elementor-widget-column_chart animated fadeInUp" data-id="4943118d" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:300}" data-widget_type="column_chart.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="chart-card">
+                                            <div class="">
+                                                <h4 class="heading graphina-chart-heading" style="text-align: center; color: #FFFFFF;">DNS Benchmark</h4>
+                                            </div>
+                                            <div class="" style="position: relative;">
+                                                <div id="column-chart" class="chart-texture column-chart-4943118d" style="min-height: 365px;">
+                                                </div>
+                                                <div class="resize-triggers">
+                                                    <div class="expand-trigger">
+                                                        <div style="width: 1081px; height: 366px;"></div>
+                                                    </div>
+                                                    <div class="contract-trigger"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <br><br>
+                                        <div id="recent-comments-2" class="widget widget_recent_comments">
+                                            <h4 class="widget-title" style="color: #071c35;" id="best"></h4>
+                                            <ul id="recentcomments" class="text-black">
+                                                <li class="recentcomments text-muted" id="recd"></li>
+                                                <li class="recentcomments">This Application checks over 55+ public DNS server and finds the best and optimistic server for your network. NOTE: Currently this only used ipv4 and some get be blocked by your ISP.</li>
+                                            </ul>
+                                        </div>
+
+                                        <script>
+                                            var myElement = document.querySelector(".column-chart-4943118d");
+                                            function chart(data,buttonhtml){
+                                                document.getElementById("startcon").innerHTML = buttonhtml;
+                                                document.getElementById("best").innerHTML = data[2];
+                                                document.getElementById("recd").innerHTML = data[3];
+                                                document.getElementById("graph").removeAttribute("style");
+                                                document.getElementById("graph").setAttribute("style","margin-top:150px");
+                                            if (typeof isInit === 'undefined') {
+                                                var isInit = {};
+                                            }
+                                            isInit['4943118d'] = false;
+                                            
+                                            var columnOptions = {
+                                                series: [{"name":"Resolving Speed (in ms)","data":data[1],"color":"#00D2FF"}],
+                                                chart: {
+                                                    height: parseInt('350'),
+                                                    type: 'bar',
+                                                    stacked: '',
+                                                    stackType: 'normal',
+                                                    animations: {
+                                                        enabled: '1',
+                                                        speed: '800',
+                                                    },
+                                                    toolbar: {
+                                                        show: ''
+                                                    },
+                                                    dropShadow: {
+                                                        enabled: '',
+                                                        enabledOnSeries: [],
+                                                        top: parseInt('0'),
+                                                        left: parseInt('0'),
+                                                        blur: parseInt('0'),
+                                                        color: '#000',
+                                                        opacity: parseFloat('0.35')
+                                                    }
+                                                },
+                                                plotOptions: {
+                                                    bar: {
+                                                        horizontal: 'yes',
+                                                        columnWidth: '1%',
+                                                        startingShape: 'flat',
+                                                        endingShape: 'flat',
+                                                        dataLabels: {
+                                                            position: 'top',
+                                                        }
+                                                    },
+                                                },
+                                                noData: {
+                                                    text: 'No Data Available',
+                                                    align: 'center',
+                                                    verticalAlign: 'middle',
+                                                    style: {
+                                                        fontSize: '16px',
+                                                        fontFamily: 'Source Sans Pro',
+                                                        color: '#FFFFFF'
+                                                    }
+                                                },
+                                                dataLabels: {
+                                                    enabled: '',
+                                                    offsetY: parseFloat('0'),
+                                                    offsetX: parseFloat('0'),
+                                                    style: {
+                                                        colors: ['#000000']
+                                                    },
+                                                    background: {
+                                                        enabled: '',
+                                                        foreColor: ['#FFFFFF'],
+                                                        borderWidth: parseInt('1'),
+                                                        borderColor: '#FFFFFF'
+                                                    },
+                                                    formatter: function (val) {
+                                                        return '' + val + '';
+                                                    }
+                                                },
+                                                stroke: {
+                                                    show: true,
+                                                    width: 2,
+                                                    colors: ['transparent']
+                                                },
+                                                grid: {
+                                                    yaxis: {
+                                                        lines: {
+                                                            show: 'yes'
+                                                        }
+                                                    }
+                                                },
+                                                xaxis: {
+                                                    categories: data[0],
+                                                    position: 'bottom',
+                                                    tickAmount: parseInt("30"),
+                                                    tickPlacement: "on",
+                                                    labels: {
+                                                        show: 'yes',
+                                                        rotateAlways: '',
+                                                        rotate: '-45',
+                                                        offsetX: parseInt('0'),
+                                                        offsetY: parseInt('0'),
+                                                        trim: true,
+                                                        style: {
+                                                            colors: '#FFFFFF',
+                                                            fontSize: '16px',
+                                                            fontFamily: 'Source Sans Pro',
+                                                            fontWeight: ''
+                                                        },
+                                                        formatter: function (val) {
+                                                            return '' + val + '';
+                                                        }
+                                                    },
+                                                    tooltip: {
+                                                        enabled: ""
+                                                    },
+                                                    crosshairs: {
+                                                        show: ""
+                                                    }
+                                                },
+                                                yaxis: {
+                                                    opposite: '',
+                                                    tickAmount: parseInt("0"),
+                                                    decimalsInFloat: parseInt("2"),
+                                                    labels: {
+                                                        show: 'yes',
+                                                        rotate: '0',
+                                                        offsetX: parseInt('0'),
+                                                        offsetY: parseInt('0'),
+                                                        style: {
+                                                            colors: '#FFFFFF',
+                                                            fontSize: '16px',
+                                                            fontFamily: 'Source Sans Pro',
+                                                            fontWeight: ''
+                                                        }
+                                                    },
+                                                    tooltip: {
+                                                        enabled: ""
+                                                    },
+                                                    crosshairs: {
+                                                        show: ""
+                                                    }
+                                                },
+                                                colors: '#3346D3_,_#F94F58_,_#F99C4E_,_#00D2FF'.split('_,_'),
+                                                fill: {
+                                                    type: 'classic',
+                                                    opacity: parseFloat('1'),
+                                                    colors: '#3346D3_,_#F94F58_,_#F99C4E_,_#00D2FF'.split('_,_'),
+                                                    gradient: {
+                                                        gradientToColors: '#3346D3_,_#F94F58_,_#F99C4E_,_#00D2FF'.split('_,_'),
+                                                        type: 'vertical',
+                                                        inverseColors: '',
+                                                        opacityFrom: parseFloat('1'),
+                                                        opacityTo: parseFloat('1')
+                                                    },
+                                                    pattern: {
+                                                        style: '_,__,__,_'.split('_,_'),
+                                                        width: 6,
+                                                        height: 6,
+                                                        strokeWidth: 2
+                                                    }
+                                                },
+                                                legend: {
+                                                    show: 'yes',
+                                                    position: 'bottom',
+                                                    horizontalAlign: 'center',
+                                                    fontSize: '16px',
+                                                    fontFamily: 'Source Sans Pro',
+                                                    fontWeight: '',
+                                                    labels: {
+                                                        colors: '#FFFFFF'
+                                                    }
+                                                },
+                                                tooltip: {
+                                                    enabled: 'yes',
+                                                    theme: 'light',
+                                                    shared: 'yes' === "yes",
+                                                    style: {
+                                                        fontSize: '16px',
+                                                        fontFamily: 'Source Sans Pro'
+                                                    }
+                                                }
+                                            };
+                                            
+                                            if ("" === "yes") {
+                                                columnOptions.yaxis.labels.formatter = function (val) {
+                                                    return '' + val + '';
+                                                }
+                                            }
+                                            if ("yes" === "yes") {
+                                                columnOptions.tooltip['enabledOnSeries'] = [0,1,2,3];
+                                            }
+                                            if ("" === "yes") {
+                                                columnOptions['annotations'] = {
+                                                    yaxis: [
+                                                        {
+                                                            y: 0,
+                                                            strokeDashArray: parseInt("0"),
+                                                            borderColor: '#000000'
+                                                        }
+                                                    ]
+                                                };
+                                            }
+                                            
+                                            initNowGraphina(
+                                                myElement,
+                                                {
+                                                    ele: document.querySelector(".column-chart-4943118d"),
+                                                    options: columnOptions,
+                                                    series: [{name: '', data: []}],
+                                                    animation: true
+                                                },
+                                                '4943118d'
+                                            );
+                                            if ('' === "1") {
+                                                getDataForChartsAjax([], 'column', '4943118d');
+                                            }
+                                        }
+                                        </script>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                </section>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                    <!-- .sf-content -->
+                                </article>
+                                <!-- #post-## -->		
+                            </div>
+                            <!-- .container -->
+                        </main>
+                        <!-- #main -->
+                    </div>
+                    <!-- #primary -->
+                </div>
+                <!-- #content -->
+            </div>
+            <!-- .site-content-contain -->
+        </div>
+        <!-- #page -->
+        <!-- === back-to-top === -->
+        <div id="back-to-top">
+            <a class="top" id="top" href="#top"> <i class="ion-ios-arrow-up"></i> </a>
+        </div>
+        <!-- === back-to-top End === -->
+        <script>
+            jQuery( function( $ ) {
+            	// Add space for Elementor Menu Anchor link
+            	if ( window.elementorFrontend ) {
+            		
+            		jQuery("#load").fadeOut();
+            		jQuery("#loading").delay(0).fadeOut("slow");
+            		
+            		if(jQuery('header').hasClass('has-sticky'))
+                          {         
+                              jQuery(window).on('scroll', function() {
+                                  if (jQuery(this).scrollTop() > 10) {
+                                      jQuery('header').addClass('menu-sticky');
+                                      jQuery('.has-sticky .logo').addClass('logo-display');
+                                  } else {
+                                      jQuery('header').removeClass('menu-sticky');
+                                      jQuery('.has-sticky .logo').removeClass('logo-display');
+                                  }
+                              });
+            
+            		}
+            		
+            		
+            	}
+            	
+            } );
+        </script>
+        <script>
+            jQuery( function( $ ) {
+            	// Add space for Elementor Menu Anchor link
+            	if ( window.elementorFrontend ) {
+            		jQuery("#load").fadeOut();
+            		jQuery("#loading").delay(0).fadeOut("slow");
+            		
+            		if(jQuery('header').hasClass('has-sticky'))
+                          {         
+                              jQuery(window).on('scroll', function() {
+                                  if (jQuery(this).scrollTop() > 10) {
+                                      jQuery('header').addClass('menu-sticky');
+                                      jQuery('.has-sticky .logo').addClass('logo-display');
+                                  } else {
+                                      jQuery('header').removeClass('menu-sticky');
+                                      jQuery('.has-sticky .logo').removeClass('logo-display');
+                                  }
+                              });
+            
+            		}
+            		
+            	}
+            	
+            } );
+            
+        </script>
+        <script id='contact-form-7-js-extra'>
+            /* <![CDATA[ */
+            var wpcf7 = {"apiSettings":{"root":"https:\/\/iqonic.design\/wp-themes\/umetric-new\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
+            /* ]]> */
+        </script>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.2.2' id='contact-form-7-js'></script>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/iqonic-extensions/assest/js/jQuery.countdownTimer.min.js?ver=1.0.0' id='jQuery-countdownTimer-min-js'></script>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/iqonic-extensions/assest/js/tox-progress.min.js?ver=1.0.0' id='tox-progress-js'></script>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/iqonic-extensions/assest/js/timeline.js?ver=1.0.0' id='timeline-js'></script>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/iqonic-extensions/assest/js/timeline.min.js?ver=1.0.0' id='timeline-min-js'></script>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/iqonic-extensions/assest/js/slick.min.js?ver=1.0.0' id='slick-min-js'></script>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/iqonic-extensions/assest/js/amcharts-core.js?ver=1.0.0' id='amcharts-core-js'></script>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/iqonic-extensions/assest/js/amcharts-maps.js?ver=1.0.0' id='amcharts-maps-js'></script>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/iqonic-extensions/assest/js/amcharts-worldLow.js?ver=1.0.0' id='amcharts-worldLow-js'></script>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/iqonic-extensions/assest/js/amcharts-animated.js?ver=1.0.0' id='amcharts-animated-js'></script>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/iqonic-extensions/assest/js/popper.min.js?ver=1.0.0' id='popper-min-js'></script>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/iqonic-extensions/assest/js/custom-map.js?ver=1.0.0' id='custom-map-js'></script>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/iqonic-extensions/assest/js/owl.carousel.min.js?ver=1.0.0' id='owl-carousel-js'></script>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/iqonic-extensions/assest/js/iqonic-extenstion.js?ver=1.0.0' id='iqonic-extenstion-js'></script>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-content/themes/umetric/assets/js/bootstrap.min.js?ver=4.1.3' id='bootstrap-js'></script>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-content/themes/umetric/assets/js/countdown.js?ver=1.0' id='countdown-js'></script>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-content/themes/umetric/assets/js/appear.js?ver=1.0' id='appear-js'></script>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-content/themes/umetric/assets/js/progresscircle.js?ver=1.0' id='progresscircle-js'></script>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-content/themes/umetric/assets/js/jquery.countTo.js?ver=1.0' id='jquery-count-js'></script>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-content/themes/umetric/assets/js/magnific-popup/jquery.magnific-popup.min.js?ver=1.1.0' id='jquery-magnific-js'></script>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-content/themes/umetric/assets/js/isotope.pkgd.min.js?ver=1.0' id='isotope-js'></script>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-content/themes/umetric/assets/js/popper.min.js?ver=1.0' id='popper-js'></script>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-content/themes/umetric/assets/js/wow.min.js?ver=1.3.0' id='wow-js'></script>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-content/themes/umetric/assets/js/dot-script.js?ver=1.3.0' id='dot-script-js'></script>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-content/themes/umetric/assets/js/smooth-scrollbar.js?ver=1.0' id='smooth-js'></script>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-content/themes/umetric/assets/js/umetric-custom.js?ver=1.0' id='umetric-custom-js'></script>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-includes/js/wp-embed.min.js?ver=5.5.3' id='wp-embed-js'></script>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.0.9' id='elementor-frontend-modules-js'></script>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-includes/js/jquery/ui/position.min.js?ver=1.11.4' id='jquery-ui-position-js'></script>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js?ver=4.8.1' id='elementor-dialog-js'></script>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2' id='elementor-waypoints-js'></script>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=5.3.6' id='swiper-js'></script>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js?ver=3.0.9' id='share-link-js'></script>
+        <script id='elementor-frontend-js-before'>
+            var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"version":"3.0.9","is_static":false,"legacyMode":{"elementWrappers":true},"urls":{"assets":"https:\/\/iqonic.design\/wp-themes\/umetric-new\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":4516,"title":"Mobile%20Apps%20Reporting%20%E2%80%93%20umetric","excerpt":"","featuredImage":false}};
+        </script>
+        <script src='https://iqonic.design/wp-themes/umetric-new/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.0.9' id='elementor-frontend-js'></script>
+    </body>
+</html>
