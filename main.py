@@ -15,4 +15,4 @@ def dnscheck(cache):
     recmd = "Second recommended is {}.".format(dns[1])
     return [dns,speed,best,recmd]
 
-eel.start('index.html',host="0.0.0.0",block=True)
+eel.start('index.html',block=True)
