@@ -1,9 +1,9 @@
 from . import dns_provider
 from . import dns_ip
 from . import check_dns
-
+import 
 import eel
-eel.init('web')
+eel.init(os.path.join(os.path.dirname(os.path.realpath(__file__)),'web'))
 
 @eel.expose
 def dnscheck(cache):
