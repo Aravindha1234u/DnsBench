@@ -5,13 +5,13 @@ import os
 from datetime import datetime
 
 #Last modified time
-mtime = os.path.getctime("./cache/dns_provider.json")
+mtime = os.path.getctime(os.path.join(os.path.dirname(os.path.realpath(__file__)),"cache\\dns_provider.json"))
 
 #day difference
 diff = datetime.now().day - datetime.fromtimestamp(mtime).day
 if diff > 0:
     
-	soup = BeautifulSoup(open("./cache/response.txt").read(),'html.parser')
+	soup = BeautifulSoup(open(os.path.join(os.path.dirname(os.path.realpath(__file__)),"cache\\response.txt")).read(),'html.parser')
 
 	#dns-providers
 	dns = {}
@@ -40,4 +40,4 @@ if diff > 0:
 		#adding to dns providers list
 		dns[i.text] = ip_address
 
-	json.dump(dns,open("./cache/dns_provider.json","w"),indent=2)
+	json.dump(dns,open(os.path.join(os.path.dirname(os.path.realpath(__file__)),"cache\\dns_provider.json"),"w"),indent=2)

@@ -1,3 +1,6 @@
 __pycache__
-*.pyc
-__pycache__/dns_ip.cpython-39.pyc
+
+.pyc
+build/
+dist/
+*.egg-info/

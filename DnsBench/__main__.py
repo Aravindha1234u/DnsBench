@@ -1,5 +1,5 @@
-import dns_provider
-import dns_ip
+from . import dns_provider
+from . import dns_ip
 import check_dns
 
 import eel
@@ -15,4 +15,8 @@ def dnscheck(cache):
     recmd = "Second recommended is {}.".format(dns[1])
     return [dns,speed,best,recmd]
 
-eel.start('index.html',block=True)
+def main():
+    eel.start('index.html',block=True)
+    
+if __name__ == '__main__':
+    main()

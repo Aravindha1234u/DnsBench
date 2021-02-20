@@ -45,8 +45,8 @@ def resolve_dns(noCache=False):
 	global resolved
  
 	#Last modified time
-	mtime = os.path.getctime("./cache/dns_resolved.json")
-	dns_provider = json.load(open("./cache/dns_provider.json"))
+	mtime = os.path.getctime(os.path.join(os.path.dirname(os.path.realpath(__file__)),"cache\\dns_resolved.json"))
+	dns_provider = json.load(open(os.path.join(os.path.dirname(os.path.realpath(__file__)),"cache\\dns_provider.json")))
 
 	#day difference
 	diff = datetime.now().minute - datetime.fromtimestamp(mtime).minute
@@ -63,7 +63,7 @@ def resolve_dns(noCache=False):
 		# Sort with response time
 		resolved = {k: v for k, v in sorted(resolved.items(), key=lambda item: item[1]) if v != -1}
 
-		json.dump(resolved,open("./cache/dns_resolved.json","w"),indent=2)
+		json.dump(resolved,open(os.path.join(os.path.dirname(os.path.realpath(__file__)),"cache\\dns_resolved.json"),"w"),indent=2)
 
-	data = json.load(open("./cache/dns_resolved.json"))
+	data = json.load(open(os.path.join(os.path.dirname(os.path.realpath(__file__)),"cache\\dns_resolved.json")))
 	return data
