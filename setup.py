@@ -13,7 +13,7 @@ setup(
     data_files=[
         ('cache', glob('DnsBench/cache/*')),
         ('web', iglob('DnsBench/web/*',recursive=True)),
-        ],
+    ],
     include_package_data=True,
     install_requires=['Eel', 'pyinstaller',"beautifulsoup4", "requests", "dnspython"],
     python_requires='>=3.5',

@@ -1,6 +1,6 @@
 from . import dns_provider
 from . import dns_ip
-import check_dns
+from . import check_dns
 
 import eel
 eel.init('web')
