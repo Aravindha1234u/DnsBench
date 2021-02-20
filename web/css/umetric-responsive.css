@@ -1,0 +1,164 @@
+/*
+
+Template: umetric - Modern Web Applications WordPress Theme
+Author: iqonicthemes.in
+Version: 1.0
+Design and Developed by: iqonicthemes.in
+
+
+*/
+
+/* Verical start*/
+
+@media(max-width:1299px) {
+	header.style-vertical .iq-vertical-btn-container.btn-vertical-close { display: inline-block; }
+	body.vertical-menu-expanded .site.vertical-site-content { padding: 0; }
+	.iq-vertical-btn-container.btn-vertical-open, .vertical-navbar-brand{ display: inline-block; }
+	body.vertical-menu-expanded .iq-vertical-btn-container.btn-vertical-open, body.vertical-menu-expanded .vertical-navbar-brand {display: inline-block; opacity: 1;}
+	header.style-vertical { left: -300px; z-index: 999; transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; }
+	body.vertical-menu-close header.style-vertical { left: 0; z-index: 999; }
+	body.vertical-menu-expanded .site.vertical-site-content .elementor-section.elementor-section-stretched { padding-left: 0px !important; }
+}
+@media(max-width:992px) {
+	header.style-vertical .navbar ul li.current-menu-item a, header.style-vertical .navbar ul li a:hover { background: inherit; }
+	header.style-vertical .navbar ul li i { padding: 0; }
+	header.style-vertical .navbar ul.navbar-nav, header.style-vertical .menu-main-menu-container { max-height: inherit; }
+	header.style-vertical .vertical ul ,header.style-vertical .navbar ul.navbar-nav{background: transparent;}
+	header.style-vertical .menu-item-has-children i{top: 12px; font-size:16px;}
+
+}
+/* Verical End*/
+
+@media only screen and (min-width:1200px) {
+	/* body.boxed_layout { padding: 30px; } */
+}
+@media(max-width:1600px) {
+	h1{font-size: 3.900em; line-height: 80px;}
+}
+@media(max-width:1499px) {
+	header .main-header { padding: 0 70px }
+	header .sub-header { padding: 10px 70px }
+	h1{font-size:50px; line-height: 60px;}
+}
+@media(max-width:1399px) {
+	header .sub-header { padding: 10px 30px }
+	header .main-header { padding: 0 30px }
+	.iq-mt-120 { margin-top: 90px; }
+}
+@media(max-width:1365px) {
+	header .sub-header { padding: 10px 15px }
+	header .main-header { padding: 0 15px }
+	header .navbar ul li a { font-size: 14px }
+	header .navbar ul li .sub-menu li a { padding: 10px 15px; }
+}
+@media(max-width:1199px) {
+	.widget.widget_nav_menu ul li .sub-menu, .widget ul.menu li .sub-menu { padding-left: 10px }
+	table td, table th { padding: 5px; text-align: center }
+	.comment-respond .comment-form-author, .comment-respond .comment-form-email, .comment-respond .comment-form-url { width: 31.6%; }
+}
+@media(max-width:1024px) {
+	section .elementor-column-gap-default>.elementor-row>.elementor-element-d2e5432>.elementor-element-populated, section .elementor-column-gap-default>.elementor-row>.elementor-element-9a53d22 >.elementor-element-populated { padding: 0 15px; }
+	.iq-talkie-price-3.active { transform: scale(1); }
+}
+@media(max-width:992px) {
+	h2 { font-size: 2rem }
+	header .navbar .sub-main .blue-btn.button, .blue-btn.button ,.iq-sidearea-btn-container{display: none;}
+	header.menu-sticky .navbar ul li.current-menu-parent i,header.menu-sticky .navbar ul li.current-menu-parent i, header.menu-sticky .navbar ul li.current-menu-ancestor i,header.menu-sticky .navbar ul li a:hover{color: #ffffff;}
+	header .navbar .sub-main .shop_list li a{padding: 0;}
+	header .navbar .sub-main .shop_list li a i{top: -20px;}
+	.iq-breadcrumb-one { padding: 80px 0 30px;}
+	#iq-talkie-price { margin-top: 90px; padding: 15px; }
+	header .logo_block, header.header_default .logo_block { padding: 0; }
+	#iq-talkie-price .tab-content > .tab-pane { display: inline-block; position: relative; left: 0; top: 0; margin: 0 0 60px; }
+	.site-main .sf-content>.vc_row.wpb_row.vc_row-fluid, .content-area .site-main, .home.blog .content-area .site-main { padding: 70px 0 }
+	header  .shop_list { background: none !important; position: absolute; width: auto; right: 60px; top: 0; }
+	header li .search-box .search-submit { top: 0; right: 0px; position: relative; }
+	header li .search-box input[type="search"] { right: 0; top: 15px; }
+	header .navbar .sub-main ul.shop_list li .cart_count #mini-cart-count { top: 6px; right: 0px; text-align: center; }
+	header .navbar .sub-main ul.shop_list li.cart-btn { right: 15%; top: -7px; }
+	header .menu-main-menu-container { max-height: 330px; overflow-y: scroll; overflow-x: hidden; }
+	header .main-header { padding: 10px 10px; }
+	header .navbar-light .navbar-toggler { background: #3346d3; color: #ffffff;border: 1px solid; border-color: #ffffff; padding: 0; position: absolute; right: 0; top: 4px; }
+	header .request-btn { margin-right: 60px; position: absolute; top: -45px; right: 0; }
+	header .navbar-light .navbar-toggler:focus { outline: none;border-color: #ffffff;  }
+	header .navbar ul { float: left; display: inline-block; width: 100%; max-width: 100%; background: #ffffff; }
+	header .menu, header.header_default .menu { float: left; display: inline-block; width: 100%; }
+	header .menu, header.header_default .menu { float: inherit; }
+	header .logo_block .logo, header.header_default .logo_block .logo, header .logo_block .logo-sticky, header.header_default .logo_block .logo-sticky { height: 35px; }
+	header .navbar-collapse { position: absolute; top: 60px; line-height: 0; left: 0; display: inline-block; width: 100%; -webkit-box-shadow: 4.871px 34.659px 30px 0px rgba(0, 0, 0, 0.06); -moz-box-shadow: 4.871px 34.659px 30px 0px rgba(0, 0, 0, 0.06); box-shadow: 4.871px 34.659px 30px 0px rgba(0, 0, 0, 0.06); }
+	header .navbar ul.navbar-nav { overflow-y: scroll; max-height: 350px; float: left; display: inline-block; width: 100%; background: #ffffff }
+	header .navbar ul li .sub-menu li.current-menu-item i { color: #ffffff; }
+	header .navbar ul li { margin-left: 0; display: inline-block; position: relative; width: 100%; float: left; }
+	header .main-header .navbar ul li a, header .main-header .navbar ul li i, header.menu-sticky .navbar ul li.current-menu-ancestor .sub-menu li i { color: #071c35; }
+	header .main-header .navbar ul li .sub-menu li:hover> i, header .main-header .navbar ul li .sub-menu li.current-menu-parent i, header .navbar ul li .sub-menu li:hover, header .navbar ul li a:hover, header .navbar ul li.current-menu-item a, header .navbar ul li.current-menu-parent a, header .navbar ul li.current-menu-parent i, header .navbar ul li.current-menu-ancestor a, header .navbar ul li.current-menu-parent i, header .navbar ul li.current-menu-ancestor i { color: #ffffff; }
+	header.menu-sticky .navbar ul li.current-menu-ancestor a, header .navbar ul li.current-menu-ancestor a, header .navbar ul li.current-menu-parent a{color: #ffffff;background: #3346d3;}
+	header .navbar ul li .sub-menu li i:before { content: "\f107"; }
+	header .navbar ul li a { color: #071c35; line-height: normal; display: inline-block; width: 100%; font-size: 16px; padding: 15px; z-index: inherit }
+	header .navbar ul li a:before { border-radius: 0 }
+	header .navbar ul li .sub-menu, header .navbar ul li:hover .sub-menu { display: none; background: rgba(125, 144, 166, 0.14); position: relative; top: 0; width: 100%; padding: 10px; z-index: 9 }
+	header .navbar ul li .sub-menu li a { color: #071c35 }
+	header .navbar ul li i { display: block; position: absolute; right: 0; top: 0; padding: 11px 15px; line-height: 28px; font-size: 20px; z-index: 9; color: #7d90a6; transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out }
+	header.menu-sticky .main-header .navbar ul li a { line-height: normal }
+	header.menu-sticky .main-header .navbar ul li:hover .sub-menu { top: 0 }
+	header .navbar ul li .sub-menu li i { top: 0; right: 0; color: #071c35; font-size: 20px; line-height: 24px; }
+	header .navbar ul li .sub-menu li:hover>.sub-menu { width: 100%; background: rgba(125, 144, 166, 0.14); position: relative; left: 0; box-shadow: none; padding: 10px; }
+	header .navbar ul li.current-menu-item a, header .navbar ul li a:hover {background:#3346d3 ;  color: #ffffff; }
+	header.menu-sticky .navbar ul li.current-menu-ancestor a, header .navbar ul li.current-menu-ancestor a, header .navbar ul li.current-menu-parent a { color: #ffffff; }
+	header .navbar .navbar-nav li:last-child .sub-menu li:hover>.sub-menu, header .navbar .navbar-nav li:nth-last-child(2) .sub-menu li:hover>.sub-menu { left: auto; right: auto; }
+	.widget_calendar .calendar_wrap table th, .widget_calendar .calendar_wrap table td { padding: 5px }
+	.commentlist .comment-respond .comment-form-author, .comment-respond .comment-form-email, .comment-respond .comment-form-url { width: 31.6% }
+	.iq-mt-120 { margin-top: 60px; }
+	.iq-breadcrumb .title { font-size: 38px; }
+	.widget_calendar .calendar_wrap table th, .widget_calendar .calendar_wrap table td { padding: 2px }
+	.commentlist .comment-respond .comment-form-author, .comment-respond .comment-form-email, .comment-respond .comment-form-url, .comment-respond .comment-form-author, .comment-respond .comment-form-email, .comment-respond .comment-form-url { width: 100%; margin-right: 0 }
+	.comment-form-cookies-consent label { margin-top: -32px }
+	.iq-counter .timer { font-size: 52px; line-height: 62px; }
+	.elementor .left_img img { max-width: 100%; left: 0; }
+}
+@media(max-width:767px) {
+	h1{font-size:32px; line-height:42px;}
+	h2{font-size:28px; line-height:38px;}
+	.iq-accordion.career-style .active-faq .row{padding: 30px 15px;}
+	.error-404 .big-text { font-size: 200px }
+	header .main-header { padding: 10px 15px; }
+	.page-numbers li .prev.page-numbers, .page-numbers li .next.page-numbers { display: none }
+	section .elementor-section.elementor-section-boxed.bg_white>.elementor-container { padding: 30px 15px 60px; }
+	.elementor-shortcode .mc4wp-form [type=submit] { margin-left: 15px; }
+	.contact-block .vc_column-inner, .widget-area { margin-top: 30px }
+	.commentlist .iq-comment-wrap { display: block }
+	.commentlist ol.children { padding-left: 30px }
+	.commentlist .iq-comments-photo { padding-right: 0; margin-bottom: 15px }
+	.iq-mt-120 { margin-top: 0; }
+	.no-margin .iq-mb-30, .iq-mb-30 { margin-bottom: 30px !important; }
+	.no-margin .iq-mt-30, .iq-mt-30 { margin-top: 30px !important; }
+	.iq-masonry.iq-columns-3 .iq-masonry-item { padding-right: 0; }
+	.iq-breadcrumb.text-left, .iq-breadcrumb .text-left, .copyright-footer { text-align: center !important; }
+	.iq-breadcrumb .float-right { float: none !important; }
+	.footer-subscribe .vc_custom_heading { margin-bottom: 15px; }
+	.iq-breadcrumb .title { font-size: 32px; }
+	.iq-breadcrumb.text-left .breadcrumb li, .iq-breadcrumb.text-left .breadcrumb li a { font-size: 14px; }
+	.copyright-footer .col-auto { display: inline-block; width: 100%; }
+	footer .footer-topbar { width: 100%; margin: 0 auto; }
+	footer .footer-topbar .container { padding: 30px; }
+	.elementor-shortcode .mc4wp-form input[type=email] { width: 100%; margin-bottom: 30px; }
+	.elementor-section.elementor-section-boxed.bg_white>.elementor-container { padding: 30px; }
+}
+@media(max-width:654px) {
+	.comment-form-cookies-consent label { margin-left: 30px; }
+}
+@media(max-width:479px) {
+	.error-404 .big-text { font-size: 150px; line-height: 160px }
+	header .search__input { font-size: 24px; }
+	header .search-form .search-submit { padding: 0; right: 45px; }
+	header .search-form .search-submit i { padding: 0; }
+	.button.mr-sm-4 { margin-right: 15px; }
+	.elementor-shortcode .mc4wp-form [type=submit] { margin-left: 0; }
+	.owl-carousel.blog-carousel .owl-item { padding: 0; }
+	.owl-carousel .iq-blog-box .iq-blog-detail { padding: 15px; }
+	header .request-btn, header .social-icone { display: none; }
+	header .navbar-light .navbar-toggler { right: 0; }
+	#vertical-menu-sub-main .vertical-search{display: none;}
+}
+@media(max-width:359px) {
+	.sub-header { display: none }
+}

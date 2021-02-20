@@ -1,0 +1,161 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+#chart, .chart-box {
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 22px 35px -16px rgba(0, 0, 0, 0.1);
+}
+
+.chart-card {
+    background-color: #fff;
+    padding: 25px 25px;
+    border-radius: 4px;
+}
+
+.chart-card h4 {
+    margin-top: 0;
+}
+
+select.flat-select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #008FFB url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'60px\' height=\'60px\'><polyline fill=\'white\' points=\'46.139,15.518 25.166,36.49 4.193,15.519\'/></svg>") no-repeat scroll right 2px top 9px / 16px 16px;
+    border: 0 none;
+    border-radius: 3px;
+    color: #fff;
+    font-family: arial, tahoma;
+    font-size: 16px;
+    font-weight: bold;
+    outline: 0 none;
+    height: 33px;
+    padding: 5px 20px 5px 10px;
+    text-align: center;
+    text-indent: 0.01px;
+    text-overflow: "";
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease 0s;
+    width: auto;
+    -webkit-transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -ms-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+}
+
+select.flat-select:focus, select.flat-select:hover {
+    border: 0;
+    outline: 0;
+}
+
+.apexcharts-canvas {
+    margin: 0 auto;
+}
+
+body div.chart-texture,
+body div[class^="timeline-chart-"],
+body div[class^="radial-chart-"],
+body div[class^="polar-chart-"],
+body div[class^="pie-chart-"],
+body div[class^="line-chart-"],
+body div[class^="heatmap-chart-"],
+body div[class^="donut-chart-"],
+body div[class^="column-chart-"],
+body div[class^="candle-chart-"],
+body div[class^="bubble-chart-"],
+body div[class^="area-chart-"] {
+    color: #38383b;
+}
+
+body div.chart-texture,
+body div.nested_column-chart-one {
+    min-height: 350px;
+}
+
+body div.nested_column-chart-one,
+body div.nested_column-chart-two {
+    width: 96%;
+    max-width: 48%;
+    box-shadow: none;
+    padding-left: 0;
+    padding-top: 20px;
+}
+
+div.nested_column-chart-one {
+    float: left;
+    position: relative;
+    transition: 1s ease transform;
+    z-index: 3;
+}
+
+div.nested_column-chart-one.chart-quarter-activated {
+    transform: translateX(0);
+    transition: 1s ease transform;
+}
+
+div.nested_column-chart-two {
+    float: left;
+    position: relative;
+    z-index: -2;
+    transition: 1s ease transform;
+}
+
+div.nested_column-chart-two.active {
+    transition: 1.1s ease-in-out transform;
+    transform: translateX(0);
+    z-index: 1;
+}
+
+button.sample-download-btn {
+    padding: 0 10px;
+}
+
+.elementor-control.elementor-control-iq_line_section_5_2_1 .elementor-panel-heading-title.elementor-section-title,
+.elementor-control.elementor-control-iq_line_section_5_2_1 .elementor-panel-heading-toggle,
+.elementor-control.elementor-control-iq_area_section_5_2_1 .elementor-panel-heading-title.elementor-section-title,
+.elementor-control.elementor-control-iq_area_section_5_2_1 .elementor-panel-heading-toggle,
+.elementor-control.elementor-control-iq_bubble_section_5_2_1 .elementor-panel-heading-title.elementor-section-title,
+.elementor-control.elementor-control-iq_bubble_section_5_2_1 .elementor-panel-heading-toggle,
+.elementor-control.elementor-control-iq_column_section_5_2_1 .elementor-panel-heading-title.elementor-section-title,
+.elementor-control.elementor-control-iq_column_section_5_2_1 .elementor-panel-heading-toggle,
+.elementor-control.elementor-control-iq_candle_section_5_2_1 .elementor-panel-heading-title.elementor-section-title,
+.elementor-control.elementor-control-iq_candle_section_5_2_1 .elementor-panel-heading-toggle,
+.elementor-control.elementor-control-iq_donut_section_5_2_1 .elementor-panel-heading-title.elementor-section-title,
+.elementor-control.elementor-control-iq_donut_section_5_2_1 .elementor-panel-heading-toggle,
+.elementor-control.elementor-control-iq_heatmap_section_5_2_1 .elementor-panel-heading-title.elementor-section-title,
+.elementor-control.elementor-control-iq_heatmap_section_5_2_1 .elementor-panel-heading-toggle,
+.elementor-control.elementor-control-iq_pie_section_5_2_1 .elementor-panel-heading-title.elementor-section-title,
+.elementor-control.elementor-control-iq_pie_section_5_2_1 .elementor-panel-heading-toggle,
+.elementor-control.elementor-control-iq_polar_section_5_2_1 .elementor-panel-heading-title.elementor-section-title,
+.elementor-control.elementor-control-iq_polar_section_5_2_1 .elementor-panel-heading-toggle,
+.elementor-control.elementor-control-iq_radar_section_5_2_1 .elementor-panel-heading-title.elementor-section-title,
+.elementor-control.elementor-control-iq_radar_section_5_2_1 .elementor-panel-heading-toggle,
+.elementor-control.elementor-control-iq_radial_section_5_2_1 .elementor-panel-heading-title.elementor-section-title,
+.elementor-control.elementor-control-iq_radial_section_5_2_1 .elementor-panel-heading-toggle,
+.elementor-control.elementor-control-iq_timeline_section_5_2_1 .elementor-panel-heading-title.elementor-section-title,
+.elementor-control.elementor-control-iq_timeline_section_5_2_1 .elementor-panel-heading-toggle,
+.important-note{
+    color: #93003c;
+}
+
+.chart-card {
+	width: 100%;
+}
+
+
+
+@media screen and (min-width: 480px) {
+    div.nested_column-chart-one {
+        transform: translateX(50%);
+    }
+
+    div.nested_column-chart-two {
+        transform: translateX(-50%);
+    }
+}

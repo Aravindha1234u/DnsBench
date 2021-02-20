@@ -1,0 +1,111 @@
+/*
+Plugin Name: Marvy - Ultimate Elementor Animation addons
+Author    :   Iqonic Design
+Version   :   1.0.0
+Author URI:   https://iqonic.design/
+*/
+
+/*================================================
+[  Table of contents  ]
+================================================
+
+:: Birds
+:: Globe
+:: Cells
+:: Dots
+:: Fog
+:: Halo
+:: Net
+:: Trunk
+
+======================================
+[ End table content ]
+======================================*/
+
+/*------------------------------- Birds ----------------------------------*/
+[class^="marvy-birds-section-"]{
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/*------------------------------- Globe ----------------------------------*/
+[class^="marvy-globe-section-"]{
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/*------------------------------- Cells ----------------------------------*/
+[class^="marvy-cells-section-"]{
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/*------------------------------- Dots ----------------------------------*/
+[class^="marvy-dots-section-"]{
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/*------------------------------- Fog ----------------------------------*/
+[class^="marvy-fog-section-"]{
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/*------------------------------- Halo ----------------------------------*/
+[class^="marvy-halo-section-"]{
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/*------------------------------- Net ----------------------------------*/
+[class^="marvy-net-section-"]{
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/*------------------------------- Trunk ----------------------------------*/
+[class^="marvy-trunk-section-"]{
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
