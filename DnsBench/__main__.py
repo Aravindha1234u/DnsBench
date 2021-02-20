@@ -1,7 +1,7 @@
 from . import dns_provider
 from . import dns_ip
 from . import check_dns
-import 
+import os
 import eel
 eel.init(os.path.join(os.path.dirname(os.path.realpath(__file__)),'web'))
 
