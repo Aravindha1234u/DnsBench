@@ -47,6 +47,8 @@ def resolve_dns(noCache=False):
 	#Last modified time
 	mtime = os.path.getctime(os.path.join(os.path.dirname(os.path.realpath(__file__)),"cache","dns_resolved.json"))
 	dns_provider = json.load(open(os.path.join(os.path.dirname(os.path.realpath(__file__)),"cache","dns_provider.json")))
+ 
+	dns_provider['Your system Dns'] = Resolver().nameservers
 
 	#day difference
 	diff = datetime.now().minute - datetime.fromtimestamp(mtime).minute
@@ -60,8 +62,11 @@ def resolve_dns(noCache=False):
 		for thread in threads:
 			thread.join()
 
-		# Sort with response time
-		resolved = {k: v for k, v in sorted(resolved.items(), key=lambda item: item[1]) if v != -1}
+		# Sort with response time and Append Your system Dns to First
+		temp = {"Your system Dns":resolved['Your system Dns']}
+		resolved = {k: v for k, v in sorted(resolved.items(), key=lambda item: item[1]) if v != -1 and k!="Your system Dns"}
+		temp.update(resolved)
+		resolved = temp
 
 		json.dump(resolved,open(os.path.join(os.path.dirname(os.path.realpath(__file__)),"cache","dns_resolved.json"),"w"),indent=2)
 

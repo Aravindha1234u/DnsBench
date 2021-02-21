@@ -16,4 +16,4 @@ if diff > 0:
 	response = requests.get(Knowndns)
 
 	#save the response
-	open(os.path.join(os.path.dirname(os.path.realpath(__file__)),"cache","response.txt"),"w").write(response.text)
+	open(os.path.join(os.path.dirname(os.path.realpath(__file__)),"cache","response.txt"),"w",encoding="utf-8").write(response.text)

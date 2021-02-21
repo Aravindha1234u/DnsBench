@@ -10,12 +10,8 @@ setup(
     author_email='aravindha1234u@gmail.com, kumaransubramanian0007@gmail.com',
     description='Multi-Threaded Python Application for Dns Benchmark',
     packages=['DnsBench'],
-    data_files=[
-        ('cache', glob('DnsBench/cache/*')),
-        ('web', iglob('DnsBench/web/*',recursive=True)),
-    ],
     include_package_data=True,
-    install_requires=['Eel', 'pyinstaller',"beautifulsoup4", "requests", "dnspython"],
+    install_requires=['Eel', 'pyinstaller',"beautifulsoup4", "requests", "dnspython","pyautogui"],
     python_requires='>=3.5',
     classifiers=[
         'License :: OSI Approved :: MIT License',
