@@ -1,7 +1,8 @@
-<center><img src="DnsBench/web/images/logo.jpg" style="width:150px;height:150px;"/></center>
+<p align="center"><img src="DnsBench/web/images/logo.jpg" style="width:100px;height:100px;"/></p>
 <br>
-<h1 style="text-align:center">DnsBench</h1>
-<h3 style="text-align:center">Multi-Threaded Python Application for Dns Benchmark</h3>
+<h1 align="center">DnsBench</h1>
+<h3 align="center">Multi-Threaded Python Application for Dns Benchmark</h3>
+<p align="center">Created by <a href="https://github.com/aravindha1234u">Aravindha Hariharan M</a> && <a href="https://github.com/manofsteel0007">Kumaran S</a></p>
 <br>
 <p align="center">
   <img src="https://img.shields.io/badge/python-v3.7-blue" alt="Python V3.7">
@@ -75,8 +76,11 @@ $ python3 dnsbench.py
 <hr><br>
 
 ## Application working
+<br>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/GYzLxvK0f18" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![Screenrecord](https://i.imgur.com/sSUodPs.gif)
+
+<br>
 
 ## Issues
 
