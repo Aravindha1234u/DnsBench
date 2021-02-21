@@ -1,4 +1,4 @@
-<p align="center"><img src="DnsBench/web/images/logo.jpg" style="width:100px;height:100px;"/></p>
+<p align="center"><img src="https://i.imgur.com/66gWHaR.png" style="width:100px;height:100px;"/></p>
 <br>
 <h1 align="center">DnsBench</h1>
 <h3 align="center">Multi-Threaded Python Application for Dns Benchmark</h3>
