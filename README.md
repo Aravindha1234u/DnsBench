@@ -2,7 +2,7 @@
 <br>
 <h1 align="center">DnsBench</h1>
 <h3 align="center">Multi-Threaded Python Application for Dns Benchmark</h3>
-<p align="center">Created by <a href="https://github.com/aravindha1234u">Aravindha Hariharan M</a> && <a href="https://github.com/manofsteel0007">Kumaran S</a></p>
+<p align="center">Created by <a href="https://github.com/aravindha1234u">Aravindha Hariharan M</a> & <a href="https://github.com/manofsteel0007">Kumaran S</a></p>
 <br>
 <p align="center">
   <img src="https://img.shields.io/badge/python-v3.7-blue" alt="Python V3.7">
