@@ -212,7 +212,7 @@
                                                 <h4 class="heading graphina-chart-heading" style="text-align: center; color: #FFFFFF;">DNS Benchmark</h4>
                                             </div>
                                             <div class="" style="position: relative;">
-                                                <div id="column-chart" class="chart-texture column-chart-4943118d" style="min-height: 200px;;max-height: 700px;">
+                                                <div id="column-chart" class="chart-texture column-chart-4943118d" style="min-height: 200px;max-height: 700px;overflow-x:auto;overflow-y:hidden;">
                                                 </div>
                                                 <div class="resize-triggers">
                                                     <div class="expand-trigger">
@@ -250,7 +250,9 @@
                                                 series: [{"name":"Resolving Speed (in ms)","data":data[1],"color":"#00D2FF"}],
                                                 chart: {
                                                     height: (data[1].length*25 + 65),
+                                                    width: (data[0].length*35+550),
                                                     type: 'bar',
+                                                    responsive: true,
                                                     stacked: '',
                                                     stackType: 'normal',
                                                     animations: {
@@ -280,6 +282,20 @@
                                                             position: 'top',
                                                         }
                                                     },
+                                                },
+                                                zoom: {
+                                                    enabled: true,
+                                                    type: 'x',
+                                                    resetIcon: {
+                                                        offsetX: -10,
+                                                        offsetY: 0,
+                                                        fillColor: '#fff',
+                                                        strokeColor: '#37474F'
+                                                    },
+                                                    selection: {
+                                                        background: '#90CAF9',
+                                                        border: '#0D47A1'
+                                                    }    
                                                 },
                                                 noData: {
                                                     text: 'No Data Available',
