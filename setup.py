@@ -3,7 +3,7 @@ from glob import glob,iglob
 
 setup(
     name='DnsBench',
-    version='1.0.1',
+    version='1.0.2',
     url='https://github.com/aravindha1234u/dnsbench',
     license='MIT',
     author='Aravindha Hariharan M, Kumaran S',
