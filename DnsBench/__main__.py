@@ -1,7 +1,7 @@
 from . import dns_provider
 from . import dns_ip
 from . import check_dns
-import os
+import os,sys
 import pyautogui
 import eel
 eel.init(os.path.join(os.path.dirname(os.path.realpath(__file__)),'web'))
@@ -18,11 +18,15 @@ def dnscheck(cache):
     return [dns,speed,best,recmd]
 
 def main():
+    mode = "chrome"
+    if len(sys.argv) > 1 and sys.argv[1] == "--no-chrome":
+        mode = "user default"
+        
     try:
-        eel.start('index.html',block=True,size=pyautogui.size())
+        eel.start('index.html',block=True,size=pyautogui.size(),mode=mode)
     except OSError as e:
         print(e)
         exit()
     
-if __name__ == '__main__':
+if __name__ == '__main__':    
     main()
