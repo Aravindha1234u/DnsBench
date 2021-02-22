@@ -245,12 +245,13 @@
                                                 var isInit = {};
                                             }
                                             isInit['4943118d'] = false;
-                                            
+                                            var temp = (data[0].length*35+550);
+                                            var w = (temp > 1081) ? temp : 1050;
                                             var columnOptions = {
                                                 series: [{"name":"Resolving Speed (in ms)","data":data[1],"color":"#00D2FF"}],
                                                 chart: {
-                                                    height: (data[1].length*25 + 65),
-                                                    width: (data[0].length*35+550),
+                                                    height: (data[1].length*25 + 85),
+                                                    width: w,
                                                     type: 'bar',
                                                     responsive: true,
                                                     stacked: '',
