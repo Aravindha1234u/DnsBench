@@ -1,36 +1,282 @@
 {
-  "FreeDNS": 174,
-  "Google DNS": 176,
-  "Freenom World": 177,
-  "Safe DNS": 208,
-  "Cisco OpenDNS": 222,
-  "DNS.WATCH": 222,
-  "Neustar UltraDNS": 223,
-  "Verisign Public DNS": 225,
-  "Quad9 DNS": 227,
-  "Comodo Secure DNS": 228,
-  "CleanBrowsing": 228,
-  "AdGuard DNS": 229,
-  "Cloudflare DNS": 230,
-  "Yandex DNS": 234,
-  "Strongarm DNS": 279,
-  "114DNS": 292,
-  "Ali DNS": 300,
-  "CZ.NIC ODVR": 305,
-  "DNS for Family": 310,
-  "SkyDNS RU": 313,
-  "CIRA Canadian Shield DNS": 314,
-  "Dyn DNS": 329,
-  "PI-DNS": 399,
-  "LibreDNS": 402,
-  "puntCAT DNS": 404,
-  "DNSlify DNS": 408,
-  "DNS Forge": 411,
-  "DNS.SB": 412,
-  "DNSPod Public DNS+": 426,
-  "Privacy-First DNS": 426,
-  "Quad101": 429,
-  "DNSCEPAT": 438,
-  "SafeSurfer DNS": 578,
-  "OpenNIC DNS": 611
+  "AdGuard DNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "Yandex DNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "CleanBrowsing": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "Comodo Secure DNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "Neustar UltraDNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "Cisco OpenDNS": {
+    "IPv4": 39,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "Google DNS": {
+    "IPv4": 40,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "Cloudflare DNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "Quad9 DNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "Verisign Public DNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "SWITCH DNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "Dyn DNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "DNS.WATCH": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "SkyDNS RU": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "Comss.ru DNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "Safe DNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "CIRA Canadian Shield DNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "OpenNIC DNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "BlahDNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "Snopyta DNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "DNS for Family": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "CZ.NIC ODVR": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "Ali DNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "CFIEC Public DNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "Nawala Childprotection DNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "DNSCEPAT": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "360 Secure DNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "IIJ.JP DNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "DNSPod Public DNS+": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "114DNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "Quad101": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "OneDNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "Privacy-First DNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "FreeDNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "Freenom World": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "OSZX DNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "Applied Privacy DNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "Strongarm DNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "SafeSurfer DNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "DeCloudUs DNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "Lelux DNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "Captnemo DNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "DNS.SB": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "DNS Forge": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "Fondation Restena DNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "fvz DNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "FFMUC DNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "Digitale Gesellschaft DNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "LibreDNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "ibksturm DNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "DNS Privacy": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "PI-DNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "Seby DNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "Evilvibes DNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "puntCAT DNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  },
+  "DNSlify DNS": {
+    "IPv4": 0,
+    "TLS": 0,
+    "HTTPS": 0
+  }
 }

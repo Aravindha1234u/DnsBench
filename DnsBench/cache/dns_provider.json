@@ -1,212 +1,662 @@
 {
-  "AdGuard DNS": [
-    "94.140.14.14",
-    "94.140.15.15"
-  ],
-  "Yandex DNS": [
-    "77.88.8.8",
-    "77.88.8.1"
-  ],
-  "CleanBrowsing": [
-    "185.228.168.168",
-    "185.228.169.168"
-  ],
-  "Comodo Secure DNS": [
-    "8.26.56.26",
-    "8.20.247.20"
-  ],
-  "Neustar UltraDNS": [
-    "156.154.70.1",
-    "156.154.71.1"
-  ],
-  "Cisco OpenDNS": [
-    "208.67.222.222",
-    "208.67.220.220"
-  ],
-  "Google DNS": [
-    "8.8.8.8",
-    "8.8.4.4"
-  ],
-  "Cloudflare DNS": [
-    "1.1.1.1",
-    "1.0.0.1"
-  ],
-  "Quad9 DNS": [
-    "9.9.9.9",
-    "149.112.112.112"
-  ],
-  "Verisign Public DNS": [
-    "64.6.64.6",
-    "64.6.65.6"
-  ],
-  "SWITCH DNS": [
-    "130.59.31.248",
-    "130.59.31.248"
-  ],
-  "Dyn DNS": [
-    "216.146.35.35",
-    "216.146.36.36"
-  ],
-  "DNS.WATCH": [
-    "84.200.69.80",
-    "84.200.70.40"
-  ],
-  "SkyDNS RU": [
-    "193.58.251.251"
-  ],
-  "Comss.ru DNS": [
-    "92.38.152.163",
-    "93.115.24.204"
-  ],
-  "Safe DNS": [
-    "195.46.39.39",
-    "195.46.39.40"
-  ],
-  "CIRA Canadian Shield DNS": [
-    "149.112.121.10",
-    "149.112.122.10"
-  ],
-  "OpenNIC DNS": [
-    "185.121.177.177",
-    "169.239.202.202"
-  ],
-  "BlahDNS": [
-    "95.216.212.177",
-    "95.216.212.177"
-  ],
-  "Snopyta DNS": [
-    "95.216.24.230",
-    "95.216.24.230"
-  ],
-  "DNS for Family": [
-    "94.130.180.225",
-    "78.47.64.161"
-  ],
-  "CZ.NIC ODVR": [
-    "193.17.47.1",
-    "185.43.135.1"
-  ],
-  "Ali DNS": [
-    "223.5.5.5",
-    "223.6.6.6"
-  ],
-  "CFIEC Public DNS": [],
-  "Nawala Childprotection DNS": [
-    "180.131.144.144",
-    "180.131.145.145"
-  ],
-  "DNSCEPAT": [
-    "172.105.216.54"
-  ],
-  "360 Secure DNS": [
-    "101.226.4.6",
-    "218.30.118.6"
-  ],
-  "IIJ.JP DNS": [],
-  "DNSPod Public DNS+": [
-    "119.29.29.29",
-    "119.28.28.28"
-  ],
-  "114DNS": [
-    "114.114.114.114",
-    "114.114.115.115"
-  ],
-  "Quad101": [
-    "101.101.101.101",
-    "101.102.103.104"
-  ],
-  "OneDNS": [
-    "117.50.10.10",
-    "52.80.52.52"
-  ],
-  "Privacy-First DNS": [
-    "174.138.21.128",
-    "174.138.21.128"
-  ],
-  "FreeDNS": [
-    "172.104.237.57",
-    "172.104.49.100"
-  ],
-  "Freenom World": [
-    "80.80.80.80",
-    "80.80.81.81"
-  ],
-  "OSZX DNS": [
-    "51.38.83.141",
-    "51.38.83.141:5353"
-  ],
-  "Applied Privacy DNS": [
-    "94.130.106.88"
-  ],
-  "Strongarm DNS": [
-    "54.174.40.213",
-    "52.3.100.184"
-  ],
-  "SafeSurfer DNS": [
-    "104.155.237.225",
-    "104.197.28.121"
-  ],
-  "DeCloudUs DNS": [
-    "176.9.199.158",
-    "176.9.199.158:8443"
-  ],
-  "Lelux DNS": [
-    "51.158.147.50"
-  ],
-  "Captnemo DNS": [
-    "139.59.48.222:4434"
-  ],
-  "DNS.SB": [
-    "185.222.222.222",
-    "185.184.222.222"
-  ],
-  "DNS Forge": [
-    "176.9.93.198",
-    "176.9.1.117"
-  ],
-  "Fondation Restena DNS": [
-    "158.64.1.29",
-    "158.64.1.29"
-  ],
-  "fvz DNS": [
-    "185.121.177.177:5353",
-    "169.239.202.202:5353"
-  ],
-  "FFMUC DNS": [
-    "195.30.94.28",
-    "195.30.94.28"
-  ],
-  "Digitale Gesellschaft DNS": [
-    "185.95.218.42",
-    "185.95.218.43"
-  ],
-  "LibreDNS": [
-    "88.198.92.222",
-    "116.202.176.26"
-  ],
-  "ibksturm DNS": [
-    "83.77.85.7",
-    "178.82.102.190"
-  ],
-  "DNS Privacy": [
-    "185.49.141.37",
-    "145.100.185.15"
-  ],
-  "PI-DNS": [
-    "88.198.91.187"
-  ],
-  "Seby DNS": [
-    "45.76.113.31",
-    "45.76.113.31"
-  ],
-  "Evilvibes DNS": [
-    "104.36.148.2192"
-  ],
-  "puntCAT DNS": [
-    "109.69.8.51"
-  ],
-  "DNSlify DNS": [
-    "185.235.81.1",
-    "185.235.81.2"
-  ]
+  "AdGuard DNS": {
+    "IPv4": [
+      "94.140.14.14",
+      "94.140.15.15",
+      "94.140.14.15",
+      "94.140.15.16",
+      "94.140.14.140",
+      "94.140.14.141"
+    ],
+    "HTTPS": [
+      "https://dns.adguard.com/dns-query",
+      "https://dns-family.adguard.com/dns-query",
+      "https://dns-unfiltered.adguard.com/dns-query"
+    ],
+    "TLS": [
+      "tls://dns.adguard.com",
+      "tls://dns-family.adguard.com",
+      "tls://dns-unfiltered.adguard.com"
+    ]
+  },
+  "Yandex DNS": {
+    "IPv4": [
+      "77.88.8.8",
+      "77.88.8.1",
+      "77.88.8.88",
+      "77.88.8.2",
+      "77.88.8.3",
+      "77.88.8.7"
+    ],
+    "HTTPS": [],
+    "TLS": []
+  },
+  "CleanBrowsing": {
+    "IPv4": [
+      "185.228.168.168",
+      "185.228.169.168",
+      "185.228.168.10",
+      "185.228.169.11",
+      "185.228.168.9",
+      "185.228.169.9"
+    ],
+    "HTTPS": [
+      "https://doh.cleanbrowsing.org/doh/family-filter/",
+      "https://doh.cleanbrowsing.org/doh/adult-filter/",
+      "https://doh.cleanbrowsing.org/doh/security-filter/"
+    ],
+    "TLS": [
+      "tls://family-filter-dns.cleanbrowsing.org",
+      "tls://adult-filter-dns.cleanbrowsing.org",
+      "tls://security-filter-dns.cleanbrowsing.org"
+    ]
+  },
+  "Comodo Secure DNS": {
+    "IPv4": [
+      "8.26.56.26",
+      "8.20.247.20"
+    ],
+    "HTTPS": [],
+    "TLS": []
+  },
+  "Neustar UltraDNS": {
+    "IPv4": [
+      "156.154.70.1",
+      "156.154.71.1",
+      "156.154.70.5",
+      "156.154.71.5",
+      "156.154.70.2",
+      "156.154.71.2",
+      "156.154.70.3",
+      "156.154.71.3",
+      "156.154.70.4",
+      "156.154.71.4"
+    ],
+    "HTTPS": [],
+    "TLS": []
+  },
+  "Cisco OpenDNS": {
+    "IPv4": [
+      "208.67.222.222",
+      "208.67.220.220",
+      "208.67.222.123",
+      "208.67.220.123"
+    ],
+    "HTTPS": [
+      "https://doh.opendns.com/dns-query",
+      "https://doh.familyshield.opendns.com/dns-query"
+    ],
+    "TLS": []
+  },
+  "Google DNS": {
+    "IPv4": [
+      "8.8.8.8",
+      "8.8.4.4"
+    ],
+    "HTTPS": [
+      "https://dns.google/dns-query"
+    ],
+    "TLS": [
+      "tls://dns.google"
+    ]
+  },
+  "Cloudflare DNS": {
+    "IPv4": [
+      "1.1.1.1",
+      "1.0.0.1",
+      "1.1.1.2",
+      "1.0.0.2",
+      "1.1.1.3",
+      "1.0.0.3"
+    ],
+    "HTTPS": [
+      "https://security.cloudflare-dns.com/dns-query"
+    ],
+    "TLS": [
+      "tls://1.1.1.1"
+    ]
+  },
+  "Quad9 DNS": {
+    "IPv4": [
+      "9.9.9.9",
+      "149.112.112.112",
+      "9.9.9.9",
+      "149.112.112.9",
+      "9.9.9.10",
+      "149.112.112.10",
+      "9.9.9.11",
+      "149.112.112.11"
+    ],
+    "HTTPS": [
+      "https://dns.quad9.net/dns-query",
+      "https://dns9.quad9.net/dns-query",
+      "https://dns10.quad9.net/dns-query",
+      "https://dns11.quad9.net/dns-query"
+    ],
+    "TLS": [
+      "tls://dns.quad9.net",
+      "tls://149.112.112.9",
+      "tls://dns10.quad9.net",
+      "tls://dns11.quad9.net"
+    ]
+  },
+  "Verisign Public DNS": {
+    "IPv4": [
+      "64.6.64.6",
+      "64.6.65.6"
+    ],
+    "HTTPS": [],
+    "TLS": []
+  },
+  "SWITCH DNS": {
+    "IPv4": [
+      "130.59.31.248"
+    ],
+    "HTTPS": [
+      "https://dns.switch.ch/dns-query"
+    ],
+    "TLS": [
+      "dns.switch.ch",
+      "130.59.31.248"
+    ]
+  },
+  "Dyn DNS": {
+    "IPv4": [
+      "216.146.35.35",
+      "216.146.36.36"
+    ],
+    "HTTPS": [],
+    "TLS": []
+  },
+  "DNS.WATCH": {
+    "IPv4": [
+      "84.200.69.80",
+      "84.200.70.40"
+    ],
+    "HTTPS": [],
+    "TLS": []
+  },
+  "SkyDNS RU": {
+    "IPv4": [
+      "193.58.251.251"
+    ],
+    "HTTPS": [],
+    "TLS": []
+  },
+  "Comss.ru DNS": {
+    "IPv4": [
+      "92.38.152.163",
+      "93.115.24.204",
+      "92.223.109.31",
+      "91.230.211.67"
+    ],
+    "HTTPS": [
+      "https://dns.comss.one/dns-query",
+      "https://dns.east.comss.one/dns-query"
+    ],
+    "TLS": [
+      "tls://dns.comss.one",
+      "tls://dns.east.comss.one"
+    ]
+  },
+  "Safe DNS": {
+    "IPv4": [
+      "195.46.39.39",
+      "195.46.39.40"
+    ],
+    "HTTPS": [],
+    "TLS": []
+  },
+  "CIRA Canadian Shield DNS": {
+    "IPv4": [
+      "149.112.121.10",
+      "149.112.122.10",
+      "149.112.121.20",
+      "149.112.122.20",
+      "149.112.121.30",
+      "149.112.122.30"
+    ],
+    "HTTPS": [
+      "https://private.canadianshield.cira.ca/dns-query",
+      "https://protected.canadianshield.cira.ca/dns-query",
+      "https://family.canadianshield.cira.ca/dns-query"
+    ],
+    "TLS": []
+  },
+  "OpenNIC DNS": {
+    "IPv4": [
+      "185.121.177.177",
+      "169.239.202.202"
+    ],
+    "HTTPS": [],
+    "TLS": []
+  },
+  "BlahDNS": {
+    "IPv4": [],
+    "HTTPS": [],
+    "TLS": []
+  },
+  "Snopyta DNS": {
+    "IPv4": [],
+    "HTTPS": [
+      "https://fi.doh.dns.snopyta.org/dns-query",
+      "95.216.24.230"
+    ],
+    "TLS": [
+      "tls://fi.dot.dns.snopyta.org",
+      "95.216.24.230"
+    ]
+  },
+  "DNS for Family": {
+    "IPv4": [
+      "94.130.180.225",
+      "78.47.64.161"
+    ],
+    "HTTPS": [
+      "https://dns-doh.dnsforfamily.com/dns-query"
+    ],
+    "TLS": [
+      "dns-dot.dnsforfamily.com"
+    ]
+  },
+  "CZ.NIC ODVR": {
+    "IPv4": [
+      "193.17.47.1",
+      "185.43.135.1"
+    ],
+    "HTTPS": [
+      "https://odvr.nic.cz/doh"
+    ],
+    "TLS": [
+      "tls://odvr.nic.cz"
+    ]
+  },
+  "Ali DNS": {
+    "IPv4": [
+      "223.5.5.5",
+      "223.6.6.6"
+    ],
+    "HTTPS": [
+      "https://dns.alidns.com/dns-query"
+    ],
+    "TLS": [
+      "tls://dns.alidns.com"
+    ]
+  },
+  "CFIEC Public DNS": {
+    "IPv4": [],
+    "HTTPS": [
+      "https://dns.cfiec.net/dns-query"
+    ],
+    "TLS": [
+      "tls://dns.cfiec.net"
+    ]
+  },
+  "Nawala Childprotection DNS": {
+    "IPv4": [
+      "180.131.144.144",
+      "180.131.145.145"
+    ],
+    "HTTPS": [],
+    "TLS": []
+  },
+  "DNSCEPAT": {
+    "IPv4": [],
+    "HTTPS": [
+      "https://asia.dnscepat.id/dns-query",
+      "https://eropa.dnscepat.id/dns-query"
+    ],
+    "TLS": [
+      "tls://asia.dnscepat.id",
+      "tls://eropa.dnscepat.id"
+    ]
+  },
+  "360 Secure DNS": {
+    "IPv4": [
+      "101.226.4.6",
+      "218.30.118.6",
+      "123.125.81.6",
+      "140.207.198.6"
+    ],
+    "HTTPS": [
+      "https://doh.360.cn/dns-query"
+    ],
+    "TLS": [
+      "tls://dot.360.cn"
+    ]
+  },
+  "IIJ.JP DNS": {
+    "IPv4": [],
+    "HTTPS": [
+      "https://public.dns.iij.jp/dns-query"
+    ],
+    "TLS": [
+      "tls://public.dns.iij.jp"
+    ]
+  },
+  "DNSPod Public DNS+": {
+    "IPv4": [
+      "119.29.29.29",
+      "119.28.28.28"
+    ],
+    "HTTPS": [
+      "https://doh.pub/dns-query",
+      "https://dns.pub/dns-query"
+    ],
+    "TLS": [
+      "dot.pub"
+    ]
+  },
+  "114DNS": {
+    "IPv4": [
+      "114.114.114.114",
+      "114.114.115.115",
+      "114.114.114.119",
+      "114.114.115.119",
+      "114.114.114.110",
+      "114.114.115.110"
+    ],
+    "HTTPS": [],
+    "TLS": []
+  },
+  "Quad101": {
+    "IPv4": [
+      "101.101.101.101",
+      "101.102.103.104"
+    ],
+    "HTTPS": [
+      "https://dns.twnic.tw/dns-query"
+    ],
+    "TLS": [
+      "tls://101.101.101.101"
+    ]
+  },
+  "OneDNS": {
+    "IPv4": [
+      "117.50.10.10",
+      "52.80.52.52",
+      "117.50.11.11",
+      "52.80.66.66"
+    ],
+    "HTTPS": [],
+    "TLS": []
+  },
+  "Privacy-First DNS": {
+    "IPv4": [
+      "174.138.21.128",
+      "172.104.93.80"
+    ],
+    "HTTPS": [
+      "https://doh.tiarap.org/dns-query",
+      "https://doh.tiar.app/dns-query",
+      "https://jp.tiarap.org/dns-query",
+      "https://jp.tiar.app/dns-query"
+    ],
+    "TLS": [
+      "tls://dot.tiar.app",
+      "tls://jp.tiar.app"
+    ]
+  },
+  "FreeDNS": {
+    "IPv4": [
+      "172.104.237.57",
+      "172.104.49.100",
+      "37.235.1.174",
+      "37.235.1.177"
+    ],
+    "HTTPS": [],
+    "TLS": []
+  },
+  "Freenom World": {
+    "IPv4": [
+      "80.80.80.80",
+      "80.80.81.81"
+    ],
+    "HTTPS": [],
+    "TLS": []
+  },
+  "OSZX DNS": {
+    "IPv4": [
+      "51.38.83.141",
+      "51.38.82.198"
+    ],
+    "HTTPS": [
+      "https://dns.oszx.co/dns-query",
+      "https://dns.pumplex.com/dns-query"
+    ],
+    "TLS": [
+      "tls://dns.oszx.co",
+      "tls://dns.pumplex.com"
+    ]
+  },
+  "Applied Privacy DNS": {
+    "IPv4": [
+      "94.130.106.88"
+    ],
+    "HTTPS": [
+      "https://doh.applied-privacy.net/dns-query"
+    ],
+    "TLS": [
+      "tls://dot1.applied-privacy.net"
+    ]
+  },
+  "Strongarm DNS": {
+    "IPv4": [
+      "54.174.40.213",
+      "52.3.100.184"
+    ],
+    "HTTPS": [],
+    "TLS": []
+  },
+  "SafeSurfer DNS": {
+    "IPv4": [
+      "104.155.237.225",
+      "104.197.28.121"
+    ],
+    "HTTPS": [],
+    "TLS": []
+  },
+  "DeCloudUs DNS": {
+    "IPv4": [
+      "176.9.199.158"
+    ],
+    "HTTPS": [
+      "https://dns.decloudus.com/dns-query"
+    ],
+    "TLS": [
+      "tls://dns.decloudus.com"
+    ]
+  },
+  "Lelux DNS": {
+    "IPv4": [
+      "51.158.147.50"
+    ],
+    "HTTPS": [
+      "https://resolver-eu.lelux.fi/dns-query"
+    ],
+    "TLS": [
+      "tls://resolver-eu.lelux.fi"
+    ]
+  },
+  "Captnemo DNS": {
+    "IPv4": [],
+    "HTTPS": [],
+    "TLS": []
+  },
+  "DNS.SB": {
+    "IPv4": [
+      "185.222.222.222",
+      "185.184.222.222"
+    ],
+    "HTTPS": [
+      "https://doh.dns.sb/dns-query"
+    ],
+    "TLS": [
+      "tls://185.222.222.222"
+    ]
+  },
+  "DNS Forge": {
+    "IPv4": [
+      "176.9.93.198",
+      "176.9.1.117"
+    ],
+    "HTTPS": [
+      "https://dnsforge.de/dns-query"
+    ],
+    "TLS": [
+      "tls://dnsforge.de"
+    ]
+  },
+  "Fondation Restena DNS": {
+    "IPv4": [],
+    "HTTPS": [
+      "https://kaitain.restena.lu/dns-query",
+      "158.64.1.29"
+    ],
+    "TLS": [
+      "kaitain.restena.lu",
+      "158.64.1.29"
+    ]
+  },
+  "fvz DNS": {
+    "IPv4": [],
+    "HTTPS": [],
+    "TLS": []
+  },
+  "FFMUC DNS": {
+    "IPv4": [],
+    "HTTPS": [],
+    "TLS": []
+  },
+  "Digitale Gesellschaft DNS": {
+    "IPv4": [],
+    "HTTPS": [
+      "https://dns.digitale-gesellschaft.ch/dns-query",
+      "185.95.218.42"
+    ],
+    "TLS": [
+      "tls://dns.digitale-gesellschaft.ch",
+      "185.95.218.43"
+    ]
+  },
+  "LibreDNS": {
+    "IPv4": [
+      "88.198.92.222"
+    ],
+    "HTTPS": [
+      "https://doh.libredns.gr/dns-query",
+      "https://doh.libredns.gr/ads"
+    ],
+    "TLS": [
+      "tls://dot.libredns.gr.com",
+      "116.202.176.26"
+    ]
+  },
+  "ibksturm DNS": {
+    "IPv4": [],
+    "HTTPS": [],
+    "TLS": []
+  },
+  "DNS Privacy": {
+    "IPv4": [],
+    "HTTPS": [],
+    "TLS": [
+      "getdnsapi.net",
+      "185.49.141.37",
+      "dnsovertls.sinodun.com",
+      "145.100.185.15",
+      "dnsovertls1.sinodun.com",
+      "145.100.185.16",
+      "unicast.censurfridns.dk",
+      "89.233.43.71",
+      "anycast.censurfridns.dk",
+      "91.239.100.100",
+      "dns.cmrg.net",
+      "199.58.81.218",
+      "dns-tls.bitwiseshift.net",
+      "81.187.221.24",
+      "ns1.dnsprivacy.at",
+      "94.130.110.185",
+      "ns2.dnsprivacy.at",
+      "94.130.110.178",
+      "dns.neutopia.org",
+      "89.234.186.112",
+      "tls://privacydns.go6lab.si",
+      "dot.securedns.eu",
+      "146.185.167.43",
+      "dnsotls.lab.nic.cl",
+      "200.1.123.46",
+      "tls-dns-u.odvr.dns-oarc.net",
+      "184.105.193.78"
+    ]
+  },
+  "PI-DNS": {
+    "IPv4": [
+      "88.198.91.187",
+      "95.216.181.228",
+      "45.67.219.208",
+      "185.213.26.187",
+      "45.63.30.163",
+      "66.42.33.135"
+    ],
+    "HTTPS": [
+      "https://doh.centraleu.pi-dns.com/dns-query",
+      "https://doh.northeu.pi-dns.com/dns-query",
+      "https://doh.westus.pi-dns.com/dns-query",
+      "https://doh.eastus.pi-dns.com/dns-query",
+      "https://doh.eastau.pi-dns.com/dns-query",
+      "https://doh.eastas.pi-dns.com/dns-query",
+      "https://doh.pi-dns.com/dns-query"
+    ],
+    "TLS": [
+      "tls://dot.centraleu.pi-dns.com",
+      "tls://dot.northeu.pi-dns.com",
+      "tls://dot.westus.pi-dns.com",
+      "tls://dot.eastus.pi-dns.com",
+      "tls://dot.eastau.pi-dns.com",
+      "tls://dot.eastas.pi-dns.com"
+    ]
+  },
+  "Seby DNS": {
+    "IPv4": [
+      "45.76.113.31",
+      "45.76.113.31",
+      "139.99.222.72"
+    ],
+    "HTTPS": [
+      "https://doh-2.seby.io/dns-query"
+    ],
+    "TLS": [
+      "tls://dot.seby.io",
+      "tls://dot.seby.io"
+    ]
+  },
+  "Evilvibes DNS": {
+    "IPv4": [],
+    "HTTPS": [],
+    "TLS": []
+  },
+  "puntCAT DNS": {
+    "IPv4": [
+      "109.69.8.51"
+    ],
+    "HTTPS": [],
+    "TLS": []
+  },
+  "DNSlify DNS": {
+    "IPv4": [
+      "185.235.81.1",
+      "185.235.81.2",
+      "185.235.81.3",
+      "185.235.81.4",
+      "185.235.81.5",
+      "185.235.81.6"
+    ],
+    "HTTPS": [
+      "https://doh.dnslify.com/dns-query"
+    ],
+    "TLS": [
+      "tls://doh.dnslify.com"
+    ]
+  }
 }

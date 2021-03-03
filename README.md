@@ -19,7 +19,7 @@
 <p>NOTE: Currently this application only uses ipv4 of DNS providers, because DNS providers are blocked by your ISP.</p>
 <br>
 
-![Screenshot1](https://i.imgur.com/BSNUais.png)
+![Screenshot1](https://i.imgur.com/eizl7cV.png)
 
 <br><hr><br>
 
@@ -73,12 +73,20 @@ Then to run it, execute the following in the terminal:
 $ python3 dnsbench.py
 ```
 
+### Update DnsBench
+
+<br>
+
+```
+$ pip install -U DnsBench
+```
+
 <hr><br>
 
 ## Application working
 <br>
 
-![Screenrecord](https://i.imgur.com/sSUodPs.gif)
+![Screenrecord](https://imgur.com/1oESmVC.png)
 
 <br>
 
