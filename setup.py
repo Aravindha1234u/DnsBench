@@ -1,9 +1,10 @@
 from setuptools import setup,find_packages
 from glob import glob,iglob
+from DnsBench import __version__
 
 setup(
     name='DnsBench',
-    version='1.0.6',
+    version=__version__,
     url='https://github.com/aravindha1234u/dnsbench',
     license='MIT',
     author='Aravindha Hariharan M, Kumaran S',

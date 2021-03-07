@@ -3,6 +3,7 @@ from . import dns_ip
 from . import check_dns
 import os,sys
 import pyautogui
+from DnsBench import __version__
 import eel
 eel.init(os.path.join(os.path.dirname(os.path.realpath(__file__)),'web'))
 
@@ -59,6 +60,10 @@ def main():
     mode = "chrome"
     if len(sys.argv) > 1 and sys.argv[1] == "--no-chrome":
         mode = "user default"
+    
+    if sys.argv[1] == "--version":
+        print("DnsBench {}".format(__version__))
+        exit()
         
     try:
         eel.start('index.html',block=True,size=pyautogui.size(),mode=mode)
