@@ -1,0 +1,9 @@
+build/
+dist/
+DnsBench.egg-info/
+Dockerfile
+.git
+.cache
+
+*.pyc
+DnsBench/__pycache__/

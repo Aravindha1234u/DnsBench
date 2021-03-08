@@ -61,7 +61,7 @@ def main():
     if len(sys.argv) > 1 and sys.argv[1] == "--no-chrome":
         mode = "user default"
     
-    if sys.argv[1] == "--version":
+    if len(sys.argv) > 1 and sys.argv[1] == "--version":
         print("DnsBench {}".format(__version__))
         exit()
         
