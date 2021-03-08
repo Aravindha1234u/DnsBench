@@ -66,7 +66,7 @@ def main():
         exit()
         
     try:
-        eel.start('index.html',block=True,size=pyautogui.size(),mode=mode)
+        eel.start('index.html',host="0.0.0.0",port=8000,block=True,size=pyautogui.size(),mode=mode)
     except OSError as e:
         print(e)
         exit()

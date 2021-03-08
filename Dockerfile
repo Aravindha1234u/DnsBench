@@ -1,9 +1,6 @@
 FROM ubuntu:latest
 
-LABEL version="1.0.8"
 LABEL maintaner="Aravindha Hariharan M <aravindha1234u@gmail.com>"
-LABEL release-date="2021-03-08"
-LABEL org.opencontainers.image.source="https://github.com/Aravindha1234u/DnsBench"
 
 WORKDIR /usr/src/DnsBench
 COPY . .
@@ -24,6 +21,8 @@ RUN apt-get install -yqq python3-tk python3-dev
 RUN pip3 install DnsBench
 
 RUN DEBIAN_FRONTEND="noninteractive" apt-get install -yqq xauth xvfb
+
+EXPOSE 8000
 
 RUN chmod +x run.sh
 ENTRYPOINT ["./run.sh"]

@@ -85,9 +85,9 @@ $ pip install -U DnsBench
 
 By pulling the image from Docker Hub
 ```
-docker run -d --name=DnsBench \
+docker run --name=DnsBench \
       --restart=always \
-      --network=host \
+      -p 8000:8000 \
       aravindha1234u/dnsbench:latest
 ```
 
@@ -96,8 +96,8 @@ From Git Repository
 ```
 docker build -t dnsbench .
 
-docker run -d --name=DnsBench \
-      --network=host \
+docker run --name=DnsBench \
+      -p 8000:8000 \
       --restart=always \
       dnsbench:latest
 ```
