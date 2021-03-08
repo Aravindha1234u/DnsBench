@@ -81,6 +81,27 @@ $ python3 dnsbench.py
 $ pip install -U DnsBench
 ```
 
+## Docker
+
+By pulling the image from Docker Hub
+```
+docker run -d --name=DnsBench \
+      --restart=always \
+      --network=host \
+      aravindha1234u/dnsbench:latest
+```
+
+From Git Repository
+
+```
+docker build -t dnsbench .
+
+docker run -d --name=DnsBench \
+      --network=host \
+      --restart=always \
+      dnsbench:latest
+```
+
 <hr><br>
 
 ## Application working
