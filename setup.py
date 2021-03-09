@@ -14,7 +14,7 @@ setup(
     long_description_content_type ='text/markdown',
     packages=['DnsBench'],
     include_package_data=True,
-    install_requires=['Eel', 'pyinstaller',"beautifulsoup4", "requests", "dnspython","pyautogui"],
+    install_requires=['Eel', 'pyinstaller',"beautifulsoup4", "requests", "dnspython","dnspython[doh]","pyautogui"],
     python_requires='>=3.5',
     classifiers=[
         'License :: OSI Approved :: MIT License',

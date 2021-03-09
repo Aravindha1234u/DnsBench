@@ -281,9 +281,10 @@
                                             var temp = Math.max.apply(null, [
                                                 Math.max.apply(null, data[1][0]),
                                                 Math.max.apply(null, data[1][1]),
-                                                Math.max.apply(null, data[1][2])]) + 100;
+                                                Math.max.apply(null, data[1][2])]);
 
                                             var w = (temp > 1100) ? temp : 1100;
+                                            w=w+200;
                                             var columnOptions = {
                                                 series: array,
                                                 chart: {

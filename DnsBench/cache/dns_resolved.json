@@ -1,91 +1,91 @@
 {
   "AdGuard DNS": {
-    "IPv4": 0,
+    "IPv4": 96,
     "TLS": 0,
-    "HTTPS": 0
+    "HTTPS": 423
   },
   "Yandex DNS": {
-    "IPv4": 0,
+    "IPv4": 230,
     "TLS": 0,
     "HTTPS": 0
   },
   "CleanBrowsing": {
-    "IPv4": 0,
+    "IPv4": 211,
     "TLS": 0,
-    "HTTPS": 0
+    "HTTPS": 678
   },
   "Comodo Secure DNS": {
-    "IPv4": 0,
+    "IPv4": 121,
     "TLS": 0,
     "HTTPS": 0
   },
   "Neustar UltraDNS": {
-    "IPv4": 0,
+    "IPv4": 98,
     "TLS": 0,
     "HTTPS": 0
   },
   "Cisco OpenDNS": {
-    "IPv4": 39,
+    "IPv4": 97,
     "TLS": 0,
-    "HTTPS": 0
+    "HTTPS": 676
   },
   "Google DNS": {
-    "IPv4": 40,
+    "IPv4": 77,
     "TLS": 0,
-    "HTTPS": 0
+    "HTTPS": 5387
   },
   "Cloudflare DNS": {
-    "IPv4": 0,
+    "IPv4": 72,
     "TLS": 0,
-    "HTTPS": 0
+    "HTTPS": 307
   },
   "Quad9 DNS": {
-    "IPv4": 0,
+    "IPv4": 99,
     "TLS": 0,
-    "HTTPS": 0
+    "HTTPS": 440
   },
   "Verisign Public DNS": {
-    "IPv4": 0,
+    "IPv4": 89,
     "TLS": 0,
     "HTTPS": 0
   },
   "SWITCH DNS": {
     "IPv4": 0,
     "TLS": 0,
-    "HTTPS": 0
+    "HTTPS": 1362
   },
   "Dyn DNS": {
-    "IPv4": 0,
+    "IPv4": 122,
     "TLS": 0,
     "HTTPS": 0
   },
   "DNS.WATCH": {
-    "IPv4": 0,
+    "IPv4": 203,
     "TLS": 0,
     "HTTPS": 0
   },
   "SkyDNS RU": {
-    "IPv4": 0,
+    "IPv4": 245,
     "TLS": 0,
     "HTTPS": 0
   },
   "Comss.ru DNS": {
     "IPv4": 0,
     "TLS": 0,
-    "HTTPS": 0
+    "HTTPS": 931
   },
   "Safe DNS": {
-    "IPv4": 0,
+    "IPv4": 124,
     "TLS": 0,
     "HTTPS": 0
   },
   "CIRA Canadian Shield DNS": {
-    "IPv4": 0,
+    "IPv4": 324,
     "TLS": 0,
-    "HTTPS": 0
+    "HTTPS": 1484
   },
   "OpenNIC DNS": {
-    "IPv4": 0,
+    "IPv4": 442,
     "TLS": 0,
     "HTTPS": 0
   },
@@ -97,22 +97,22 @@
   "Snopyta DNS": {
     "IPv4": 0,
     "TLS": 0,
-    "HTTPS": 0
+    "HTTPS": 1594
   },
   "DNS for Family": {
-    "IPv4": 0,
+    "IPv4": 223,
     "TLS": 0,
     "HTTPS": 0
   },
   "CZ.NIC ODVR": {
-    "IPv4": 0,
+    "IPv4": 226,
     "TLS": 0,
     "HTTPS": 0
   },
   "Ali DNS": {
-    "IPv4": 0,
+    "IPv4": 117,
     "TLS": 0,
-    "HTTPS": 0
+    "HTTPS": 1157
   },
   "CFIEC Public DNS": {
     "IPv4": 0,
@@ -127,57 +127,57 @@
   "DNSCEPAT": {
     "IPv4": 0,
     "TLS": 0,
-    "HTTPS": 0
+    "HTTPS": 937
   },
   "360 Secure DNS": {
-    "IPv4": 0,
+    "IPv4": 329,
     "TLS": 0,
-    "HTTPS": 0
+    "HTTPS": 6394
   },
   "IIJ.JP DNS": {
     "IPv4": 0,
     "TLS": 0,
-    "HTTPS": 0
+    "HTTPS": 880
   },
   "DNSPod Public DNS+": {
-    "IPv4": 0,
+    "IPv4": 140,
     "TLS": 0,
-    "HTTPS": 0
+    "HTTPS": 447
   },
   "114DNS": {
-    "IPv4": 0,
+    "IPv4": 320,
     "TLS": 0,
     "HTTPS": 0
   },
   "Quad101": {
-    "IPv4": 0,
+    "IPv4": 151,
     "TLS": 0,
-    "HTTPS": 0
+    "HTTPS": 1832
   },
   "OneDNS": {
-    "IPv4": 0,
+    "IPv4": 317,
     "TLS": 0,
     "HTTPS": 0
   },
   "Privacy-First DNS": {
-    "IPv4": 0,
+    "IPv4": 99,
     "TLS": 0,
-    "HTTPS": 0
+    "HTTPS": 522
   },
   "FreeDNS": {
-    "IPv4": 0,
+    "IPv4": 229,
     "TLS": 0,
     "HTTPS": 0
   },
   "Freenom World": {
-    "IPv4": 0,
+    "IPv4": 632,
     "TLS": 0,
     "HTTPS": 0
   },
   "OSZX DNS": {
     "IPv4": 0,
     "TLS": 0,
-    "HTTPS": 0
+    "HTTPS": 4162
   },
   "Applied Privacy DNS": {
     "IPv4": 0,
@@ -185,12 +185,12 @@
     "HTTPS": 0
   },
   "Strongarm DNS": {
-    "IPv4": 0,
+    "IPv4": 335,
     "TLS": 0,
     "HTTPS": 0
   },
   "SafeSurfer DNS": {
-    "IPv4": 0,
+    "IPv4": 152,
     "TLS": 0,
     "HTTPS": 0
   },
@@ -202,7 +202,7 @@
   "Lelux DNS": {
     "IPv4": 0,
     "TLS": 0,
-    "HTTPS": 0
+    "HTTPS": 1180
   },
   "Captnemo DNS": {
     "IPv4": 0,
@@ -210,14 +210,14 @@
     "HTTPS": 0
   },
   "DNS.SB": {
-    "IPv4": 0,
+    "IPv4": 849,
     "TLS": 0,
-    "HTTPS": 0
+    "HTTPS": 684
   },
   "DNS Forge": {
-    "IPv4": 0,
+    "IPv4": 231,
     "TLS": 0,
-    "HTTPS": 0
+    "HTTPS": 1096
   },
   "Fondation Restena DNS": {
     "IPv4": 0,
@@ -237,12 +237,12 @@
   "Digitale Gesellschaft DNS": {
     "IPv4": 0,
     "TLS": 0,
-    "HTTPS": 0
+    "HTTPS": 695
   },
   "LibreDNS": {
-    "IPv4": 0,
+    "IPv4": 225,
     "TLS": 0,
-    "HTTPS": 0
+    "HTTPS": 704
   },
   "ibksturm DNS": {
     "IPv4": 0,
@@ -257,12 +257,12 @@
   "PI-DNS": {
     "IPv4": 0,
     "TLS": 0,
-    "HTTPS": 0
+    "HTTPS": 1129
   },
   "Seby DNS": {
     "IPv4": 0,
     "TLS": 0,
-    "HTTPS": 0
+    "HTTPS": 618
   },
   "Evilvibes DNS": {
     "IPv4": 0,
@@ -270,13 +270,13 @@
     "HTTPS": 0
   },
   "puntCAT DNS": {
-    "IPv4": 0,
+    "IPv4": 208,
     "TLS": 0,
     "HTTPS": 0
   },
   "DNSlify DNS": {
-    "IPv4": 0,
+    "IPv4": 110,
     "TLS": 0,
-    "HTTPS": 0
+    "HTTPS": 508
   }
 }
