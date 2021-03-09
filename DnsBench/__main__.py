@@ -3,6 +3,7 @@ from . import dns_ip
 from . import check_dns
 import os,sys
 import pyautogui
+import argparse
 from DnsBench import __version__
 import eel
 eel.init(os.path.join(os.path.dirname(os.path.realpath(__file__)),'web'))
@@ -57,16 +58,28 @@ def dnscheck(cache,tls,https):
     return [list(nameserver),speed,best,recmd]
 
 def main():
+    #Argument Parser
+    parser = argparse.ArgumentParser(description='DnsBench - Multi-Threaded Python Application for Dns Benchmark',prefix_chars='-')
+    parser.add_argument('-v','--version',action="store_true",help="Display Version of package")
+    parser.add_argument('--no-chrome',action="store_true",help="Disable as chrome app and use Default Browser")
+    parser.add_argument('-H','--host',action="store",default="127.0.0.1",help="Set host on which application should run",required=False)
+    parser.add_argument('-P','--port',action="store",default=8000,type=int,help="Using which port should it run",required=False)
+    
+    args = parser.parse_args()
+    
     mode = "chrome"
-    if len(sys.argv) > 1 and sys.argv[1] == "--no-chrome":
+    if args.no_chrome:
         mode = "user default"
     
-    if len(sys.argv) > 1 and sys.argv[1] == "--version":
+    if args.version:
         print("DnsBench {}".format(__version__))
         exit()
+
+    host = args.host    
+    port = args.port
         
     try:
-        eel.start('index.html',host="0.0.0.0",port=8000,block=True,size=pyautogui.size(),mode=mode)
+        eel.start('index.html',host=host,port=port,block=True,size=pyautogui.size(),mode=mode)
     except OSError as e:
         print(e)
         exit()

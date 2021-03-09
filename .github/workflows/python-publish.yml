@@ -1,14 +1,14 @@
 # This workflow will upload a Python Package using Twine when a release is created
 # For more information see: https://help.github.com/en/actions/language-and-framework-guides/using-python-with-github-actions#publishing-to-package-registries
 
-name: DnsBench Pypi Release Work
+name: DnsBench Package Release Workflow
 
 on: push
 
 jobs:
   deploy:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
 
     steps:
     - uses: actions/checkout@v2
