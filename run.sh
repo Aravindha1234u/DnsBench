@@ -5,10 +5,9 @@ XVFB=$!
 
 sleep 30
 
-echo -e "\n\n\n"
+echo -e "\n\n"
 echo "You can use DnsBench from your Browser now"
 echo "Local URL  : http://127.0.0.1:8000/index.html"
-echo "Remote URL : http://$(hostname -I | sed 's/ *$//g')/index.html"
 
 wait $XVFB
 
