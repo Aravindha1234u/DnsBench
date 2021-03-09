@@ -102,6 +102,22 @@ docker run --name=DnsBench \
       dnsbench:latest
 ```
 
+Remove Existing
+
+```
+Delete image
+Terminal - docker rmi $(docker images 'aravindha1234u/dnsbench:latest' -a -q)
+
+or
+
+Powershell - docker rmi $(docker images --format "{{.Repository}}:{{.Tag}}"|findstr "aravindha1234u/dnsbench:latest")
+
+
+Delete Container
+
+docker rm DnsBench
+```
+
 <hr><br>
 
 ## Application working
