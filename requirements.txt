@@ -4,3 +4,4 @@ dnspython
 Eel
 pyautogui
 dnspython[doh]
+requests-toolbelt
