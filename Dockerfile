@@ -18,8 +18,10 @@ RUN apt-get install -yqq ./google-chrome-stable_current_amd64.deb
 RUN rm google-chrome-stable_current_amd64.deb 
 
 RUN apt-get install -yqq python3-tk python3-dev
+RUN pip3 install -U pip
 RUN pip3 install -r requirements.txt
 RUN python3 setup.py install
+RUN pip3 install -U DnsBench
 
 RUN DEBIAN_FRONTEND="noninteractive" apt-get install -yqq xauth xvfb
 
